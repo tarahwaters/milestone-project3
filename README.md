@@ -6,8 +6,7 @@
 
 ------
 
-Website description.
-
+TopTenTravel is a travel sharing web application that allows user to view and post lists of their 'Top Ten' travel experiences around the world. As more users share their favourite places, activities, foods and beverages, and hidden gems from their own personal travel experiences, we can help inspire other potential travellers to have new and enriching experiences of their own. This idea came as a way to share my own itinerary ideas with friends and family who have been interested, but also for myself to learn about others' suggestions whenever I am daydreaming or planning to visit a new destination! This platform offers a simple and easy approach to get quick inpsiration when travel planning, while also being visually appealing and accessible to all users.
 
 ## Showcase
 
@@ -27,14 +26,16 @@ A **deployed link** to the live website can be found here [Website Name](#)
 ## Strategy
 ### Target Audience
 
-The target audience of this game are students studying Biology at high school level (GCSE or equvivalent) and also those interested in learning some biological facts. The topic of Specialised Cells is included in the UK biology curriculum at KS3 and GCSE (including iGCSE) and this game can therefore be used as a fun revision / learning tool. It is also designed to be accessible without prior biology knowledge so hopefully will be enjoyed by any user of any age.
+The target audience of this web application are anyone who is interested in researching or sharing their travel ideas with others. By sharing a post that summarises their 'Top Ten' ideas relating to a travel activity or destination, they are helping to build on the exeperience pool of an online community of like-minded individuals who love travelling and all the world has to offer. Each post includes a succinct summary of users' favourite travel ideas which are easy and quick to access - the aim of the site is to provide interesting and personalised lists for those searching or planning for their dream destination trips.
 
 ### User Requirements and Expectations
 
 - Simple and intuitive user interface
-- Instructions are easy to follow
-- Gameplay works as expected and is fun to play
-- Clear presentation of the content
+- Clear presentation of necessary information to invite the user to join
+- Secure platform that uses a login system with username and password to access and manage personal posts
+- Quick and easy to search through existing posts
+- Quick and easy to create an account and start sharing posts with others
+- Quick and easy to add, edit or delete posts from the an account
 - Design that is visually attractive
 - Accessibility
 - Features and navigation system works as expected
@@ -44,18 +45,20 @@ The target audience of this game are students studying Biology at high school le
 
 #### User
 As a user I would like:
-- to play a card-matching memory game presented in a visually appealing format
-- to learn or revise knowledge about specialised cell types in a fun way
-- to play a game with the option of increasing the complexity/challenge
-- to read the rules of the game
-- to access the prelearning material before testing their knowledge during the game
-- to navigate through the elements of the game / website easily
-- to receive ongoing feedback about my progression through the game
-- to have fun while playing the game (and also learn!).
-- to learn some interesting facts about specialised cells
-- to have the option of viewing and downloading a summary of the cell types and their functions
-- to restart the game to play again
-- **to have an option of playing an increased level of difficulty**
+- to know what the website is about and what service it is providing
+- to be able to register for a secure account by creating a login username and password
+- to be able to securely log out or delete the account as needed
+- to be able to explore posts that have been shared by other users (even without a registered account)
+- to be able to filter more relevant posts via a search bar
+- to be able to open an individual post to engage with the content on a full screen
+- to be able to add a post via their personal account by filling out a form and submitting it to the website database
+- to be able to view the newly shared travel post and edit / delete if required
+- to be given a warning when deleting a post, and the option to either cancel or continute with the delete action
+- to have confirmation that the add / edit / delete of a post action has been successful
+- to see the result of posting action as expected on the main page (i.e. the correct information has been added / updated / removed from view)
+- to navigate through the website intuitively and easily
+- to have each link, button and action on the website work as expected
+- to have an enjoyable experience while engaging with the platform
 
 ---
 
