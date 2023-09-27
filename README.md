@@ -207,6 +207,7 @@ These were the initial wireframes created for the project during the planning st
 - [W3 Jigsaw](https://jigsaw.w3.org/css-validator/validator) - used to validate CSS
 - [Tim Nelson's Markdown Builder](https://traveltimn.github.io/markdown-builder/) to help create the structure and some of the content for the README and TESTING.md files
 - [AmIResponsive?](https://ui.dev/amiresponsive?url=https://tarahwaters.github.io/milestone-project2/) - used to create a mockup of the website
+[RandomKeygen](https://randomkeygen.com/) - used to create a secure secret key
 
 
 ## Testing:
