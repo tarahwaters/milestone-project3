@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+    {% for cafe in cafes %}
+        <h2>{{ cafe.cafe_name }}</h2>
+        {{ cafe.country_name }}<br>
+        {{ cafe.city_name }}<br>
+        {{ cafe.map_link }}<br>
+        {{ cafe.free_wifi }}<br>
+        {{ cafe.wifi_speed }}<br>
+        {{ cafe.power_outlets}}<br>
+        {{ cafe.cafe_description }}<br>
+        {{ cafe.published_by }}<br>
+        {{ cafe.published_on }}<br>
+	{% endfor %}	
+
+{% endblock %}
