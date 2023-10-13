@@ -1,12 +1,16 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
-# TopTenTravel 🌏
-# - a full stack web application to share travel recommendations
+# cafeworks ☕
+# - a full stack web application to share cafe recommendations suitable for remote working
 
 ------
 
-TopTenTravel is a travel sharing web application that allows user to view and post lists of their 'Top Ten' travel experiences around the world. As more users share their favourite places, activities, foods and beverages, and hidden gems from their own personal travel experiences, we can help inspire other potential travellers to have new and enriching experiences of their own. This idea came as a way to share my own itinerary ideas with friends and family who have been interested, but also for myself to learn about others' suggestions whenever I am daydreaming or planning to visit a new destination! This platform offers a simple and easy approach to get quick inpsiration when travel planning, while also being visually appealing and accessible to all users.
+**cafeworks** is a web application that allows user to view and recommend their favourite cafes that are suitable for remote working.
+
+It can often be difficult to find the right cafe which offers us everything we need for working / studying remotely - e.g. a free and reliable wifi connection, power outlets for charging laptops and devices, comfortable seating, and good quality food and drink options for refueling are also important!
+
+This app aims to provide a platform where users can share their favourite remote working cafes, and hopefully inpire other cafeworking digital nomads who love to travel and explore the world while they work! 
 
 ## Showcase
 
@@ -26,7 +30,7 @@ A **deployed link** to the live website can be found here [Website Name](#)
 ## Strategy
 ### Target Audience
 
-The target audience of this web application are anyone who is interested in researching or sharing their travel ideas with others. By sharing a post that summarises their 'Top Ten' ideas relating to a travel activity or destination, they are helping to build on the exeperience pool of an online community of like-minded individuals who love travelling and all the world has to offer. Each post includes a succinct summary of users' favourite travel ideas which are easy and quick to access - the aim of the site is to provide interesting and personalised lists for those searching or planning for their dream destination trips.
+The target audience of this web application are anyone who is interested in exploring cafe options for remote work or study around the world. By sharing a cafe suggestion, they are helping to build an online community of cafelovers and remote workers. It might be that the user is on holiday or travelling while they work or study, or they are looking to explore new cafes in their neighbourhood.. hopefully this app will provide some great cafe recommendations that will inspire and satisy their needs.
 
 ### User Requirements and Expectations
 
