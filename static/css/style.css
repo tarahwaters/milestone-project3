@@ -9,3 +9,21 @@ h1 {
     font-weight: 700;
     color: #490908;
 }
+
+.brand-logo, .sidenav-trigger {
+    font-family:'League Spartan';
+    font-weight: 700;
+    color: #490908 !important;
+}
+
+nav ul a {
+    font-family:'League Spartan';
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #490908 !important;
+}
+
+.text-shadow {
+    text-shadow: 1px 0.5px 1px rgba(0, 0, 0, 0.5);
+}

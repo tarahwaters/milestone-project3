@@ -12,6 +12,37 @@
     <title>cafeworks</title>
 </head>
 <body>
+
+    <header>
+        <!-- top navbar from materialize (https://materializecss.com/navbar.html) -->
+        <nav class="text-shadow brown lighten-5">
+            <div class="nav-wrapper">
+              <a href="#!" class="brand-logo">cafeworks</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="menu-links right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Add Cafe</a></li>
+                <li><a href="#">Manage Locations</a></li>
+                <li><a href="#">Log Out</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Register</a></li>
+              </ul>
+            </div>
+          </nav>
+
+        <!-- mobile sidenav from materialize (https://materializecss.com/navbar.html) -->        
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Add Cafe</a></li>
+                <li><a href="#">Manage Locations</a></li>
+                <li><a href="#">Log Out</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Register</a></li>
+          </ul>
+
+    </header>
     
     <h1>cafeworks</h1>
     {% block content %}
