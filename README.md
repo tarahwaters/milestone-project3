@@ -175,18 +175,19 @@ These were the initial wireframes created for the project during the planning st
 
 [coolors.co](https://coolors.co/) was used to create a color palette for the design.
 
-![Link description](/documentation/readme/colorscheme.png "Link description")
+![cafeworks colorscheme](/documentation/readme/cafeworks-colors.png "cafeworks colorscheme")
 
 ### Typography
 
-[fontjoy.com](https://fontjoy.com/) was used to create aesthetic font pairings for the project.
+[canva.com](https://canva.com/) was used to create a logo from a template and their default font pairing was used from **Canva's 'Ultimate Guide to Font Pairing'**.
 
-- **Font1** - for the main title
-- **Font2** - for subtitles and headings
-- **Font3** - for descriptive text
+"**League Spartan** is a modern typeface with strong structure and geometric form. This contrasts well against the elegant and more traditional style of **Libre Baskerville**. Using a serif for your body copy makes dense information easy to read." - from [Canva Ultimate Guide to Font Pairing](https://www.canva.com/learn/the-ultimate-guide-to-font-pairing/)
+
+- **League Spartan** - for the main title and headings
+- **Libre Baskerville** - for descriptive text
 - with a backup font of **"Sans serif"**
 
-![Font pairings](/documentation/readme/typography.jpg "Font pairings")
+![Font pairings](/documentation/readme/canva-font-pairing.webp "Font pairings")
 
 ## Tools and Technologies Used:
 
