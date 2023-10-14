@@ -1,6 +1,5 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-
 # cafeworks ☕
 # - a full stack web application to share cafe recommendations suitable for remote working
 
@@ -171,6 +170,13 @@ These were the initial wireframes created for the project during the planning st
 - [Desktop Devices](https://github.com/tarahwaters/milestone-project2/blob/main/documentation/readme/wireframe-desktop-winmessage.png "WinMessage Modal Wireframe for Desktop Devices")
 
 ## Surface
+
+### Logo
+
+The cafeworks logo was created using [Canva](https://canva.com/).
+
+![cafeworks logo](/documentation/readme/cafeworks-logo.png "cafeworks logo")
+
 ### Color Scheme
 
 [coolors.co](https://coolors.co/) was used to create a color palette for the design.
