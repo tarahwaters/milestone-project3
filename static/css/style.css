@@ -3,3 +3,9 @@
 body {
     background-color: #F1EFE7;
 }
+
+h1 {
+    font-family: 'League Spartan';
+    font-weight: 700;
+    color: #490908;
+}
