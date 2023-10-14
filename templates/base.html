@@ -17,10 +17,10 @@
         <!-- top navbar from materialize (https://materializecss.com/navbar.html) -->
         <nav class="text-shadow brown lighten-5">
             <div class="nav-wrapper">
-              <a href="#!" class="brand-logo">cafeworks</a>
+              <a href="{{ url_for('get_cafes') }}" class="brand-logo">cafeworks</a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
               <ul class="menu-links right hide-on-med-and-down">
-                <li><a href="#">Home</a></li>
+                <li><a href="{{ url_for('get_cafes') }}">Home</a></li>
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Add Cafe</a></li>
                 <li><a href="#">Manage Locations</a></li>
@@ -33,7 +33,7 @@
 
         <!-- mobile sidenav from materialize (https://materializecss.com/navbar.html) -->        
           <ul class="sidenav" id="mobile-demo">
-            <li><a href="#">Home</a></li>
+                <li><a href="{{ url_for('get_cafes') }}">Home</a></li>
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Add Cafe</a></li>
                 <li><a href="#">Manage Locations</a></li>
