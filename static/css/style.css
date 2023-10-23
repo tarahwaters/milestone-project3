@@ -16,6 +16,11 @@ h1 {
     color: #490908 !important;
 }
 
+.cafeworks-beans {
+    width: 1.5rem;
+    margin: 0rem 0.2rem;
+}
+
 nav ul a {
     font-family:'League Spartan';
     font-weight: 500;
