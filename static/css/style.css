@@ -44,3 +44,6 @@ nav ul a {
 
 /* Register Page */
 
+.flash-messages h4 {
+    line-height: 2;
+}
