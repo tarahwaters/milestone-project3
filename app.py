@@ -47,6 +47,11 @@ def register():
     return render_template("register.html")
 
 
+@app.route("/signin", methods={"GET", "POST"})
+def signin():
+    return render_template("signin.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
