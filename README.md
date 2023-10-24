@@ -261,8 +261,8 @@ A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/conf
 
 ## Credits
 
-For help with...:
-- [Link description](#)
+For help with **styling queries**:
+- [Google Fonts Manual](https://fonts.google.com/knowledge/using_type/manual_kerning_is_rarely_required) - Adjusting letter spacing for brand logo font
 - [Link description](#)
 - [Link description](#)
 
