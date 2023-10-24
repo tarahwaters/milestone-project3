@@ -11,19 +11,30 @@ h1 {
     color: #490908;
 }
 
-h2, h3, h4 {
+h2 {
     font-family: 'League Spartan';
     font-weight: 500;
     color: #490908;
 }
 
+h3, h4 {
+    font-family: 'League Spartan';
+    font-weight: 500;
+    font-size: 2rem;
+    color: #490908;
+}
+
 /* Navbar */
 
-.brand-logo, .sidenav-trigger {
+.brand-logo {
     font-family:'League Spartan';
     font-weight: 700;
     color: #490908 !important;
     letter-spacing: -0.09em;
+}
+
+.sidenav-trigger {
+    color: #BC8B8A;
 }
 
 .cafeworks-beans {
@@ -36,7 +47,7 @@ nav ul a {
     font-weight: 500;
     font-style: bold;
     font-size: 1.5rem;
-    color: #490908 !important;
+    color: #BC8B8A !important;
 }
 
 /* .text-shadow {
