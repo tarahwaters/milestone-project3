@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <!-- Intro & Add Cafe Button -->
+    <div class="container intro-div center-align">
+        <h1>Remote Working Cafes</h1>
+        <p>Explore cafes suitable for remote working in different locations around the world. 
+            Click on a cafe for more details. Or add your own cafe recommendation to share with others?</p>
+        <a href="#" class="btn-large">ADD CAFE</a>
+    </div>
+
+
     {% for cafe in cafes %}
         <h2>{{ cafe.cafe_name }}</h2>
         {{ cafe.country_name }}<br>
