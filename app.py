@@ -89,7 +89,13 @@ def profile(username):
     
     return redirect(url_for("signin"))
 
-    
+
+@app.route("/signout")
+def signout():
+    # remove user from session cookies
+    flash("You have successfully been signed out")
+    session.pop("user")
+    return redirect(url_for("signin"))    
 
 
 if __name__ == "__main__":
