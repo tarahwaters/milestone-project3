@@ -17,7 +17,7 @@ h2 {
     color: #490908;
 }
 
-h3, h4 {
+h3, h4, h5 {
     font-family: 'League Spartan';
     font-weight: 500;
     font-size: 2rem;
@@ -59,3 +59,29 @@ nav ul a {
 .flash-messages h4 {
     line-height: 2;
 }
+
+/* Footer */
+
+.page-footer {
+    background-color: #BC8B8A !important;
+}
+
+.footer-copyright {
+    font-family: 'League Spartan';
+    font-weight: 500;
+}
+
+.footer-content h5, p {
+    text-align: right;
+}
+
+.social-links {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+.social-links a {
+    margin: 0 0.6rem 0 0;
+}
+
