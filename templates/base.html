@@ -28,7 +28,7 @@
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                 <li><a href="#">Add Cafe</a></li>
                 <li><a href="#">Manage Locations</a></li>
-                <li><a href="#">Log Out</a></li>
+                <li><a href="{{ url_for('signout') }}">Sign Out</a></li>
                 <li><a href="{{ url_for('signin') }}">Sign In</a></li>
                 <li><a href="{{ url_for('register') }}">Register</a></li>
               </ul>
@@ -41,7 +41,7 @@
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                 <li><a href="#">Add Cafe</a></li>
                 <li><a href="#">Manage Locations</a></li>
-                <li><a href="#">Log Out</a></li>
+                <li><a href="{{ url_for('signout') }}">Sign Out</a></li>
                 <li><a href="{{ url_for('signin') }}">Sign In</a></li>
                 <li><a href="{{ url_for('register') }}">Register</a></li>
           </ul>
