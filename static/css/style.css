@@ -9,6 +9,7 @@ h1 {
     font-family: 'League Spartan';
     font-weight: 700;
     color: #490908;
+    font-size: 3rem;
 }
 
 h2 {
@@ -71,7 +72,7 @@ nav ul a {
     font-weight: 500;
 }
 
-.footer-content h5, p {
+.footer-content h5, .footer-content p {
     text-align: right;
 }
 
