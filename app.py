@@ -96,7 +96,12 @@ def signout():
     # remove user from session cookies
     flash("You have successfully been signed out")
     session.pop("user")
-    return redirect(url_for("signin"))    
+    return redirect(url_for("signin"))
+
+
+@app.route("/add_cafe")
+def add_cafe():
+    return render_template("add_cafe.html")
 
 
 if __name__ == "__main__":
