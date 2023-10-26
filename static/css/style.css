@@ -25,6 +25,14 @@ h3, h4, h5 {
     color: #490908;
 }
 
+.intro-div {
+    padding-bottom: 2rem;
+}
+
+strong {
+    font-weight: 600;
+}
+
 /* Navbar */
 
 .brand-logo {
@@ -85,4 +93,6 @@ nav ul a {
 .social-links a {
     margin: 0 0.6rem 0 0;
 }
+
+/* Events Page */
 
