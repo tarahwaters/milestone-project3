@@ -101,7 +101,8 @@ def signout():
 
 @app.route("/add_cafe")
 def add_cafe():
-    return render_template("add_cafe.html")
+    countries = mongo.db.countries.find().sort("country_name", 1)
+    return render_template("add_cafe.html", countries=countries)
 
 
 if __name__ == "__main__":
