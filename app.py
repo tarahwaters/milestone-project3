@@ -4,6 +4,7 @@ from flask import (
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
@@ -102,6 +103,7 @@ def signout():
 @app.route("/add_cafe", methods=["GET", "POST"])
 def add_cafe():
     if request.method == "POST":
+        current_date = datetime.now().strftime("%d/%m/%Y")
         cafe = {
             "cafe_name": request.form.get("cafe_name"),
             "city_name": request.form.get("city_name"),
@@ -111,7 +113,8 @@ def add_cafe():
             "power_outlets": request.form.get("power_outlets"),
             "free_wifi": request.form.get("free_wifi"),
             "wifi_speed": request.form.get("wifi_speed"),
-            "published_by": session["user"] 
+            "published_by": session["user"],
+            "published_on": current_date,
         }
         mongo.db.cafes.insert_one(cafe)
         flash("Cafe Added Successfully!")
