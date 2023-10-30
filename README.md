@@ -261,17 +261,6 @@ A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/conf
 
 ## Credits
 
-For help with **styling queries**:
-- [Google Fonts Manual](https://fonts.google.com/knowledge/using_type/manual_kerning_is_rarely_required) - Adjusting letter spacing for brand logo font
-- [Margins](https://www.w3schools.com/cssref/pr_margin.php) - Adjusting margins in CSS
-- [Link description](#)
-
-
-For help with...:
-- [Link description](#)
-- [Link description](#)
-- [Link description](#)
-
 For help with...:
 - [Link description](#)
 - [Link description](#)
@@ -294,6 +283,15 @@ For help with...:
 - [StackOverflow](https://stackoverflow.com/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
 - [JavaScript Syntax - W3 Schools](https://www.w3schools.com/js/js_syntax.asp)
+
+For help with **styling queries**:
+- [Google Fonts Manual](https://fonts.google.com/knowledge/using_type/manual_kerning_is_rarely_required) - Adjusting letter spacing for brand logo font
+- [Margins](https://www.w3schools.com/cssref/pr_margin.php) - Adjusting margins in CSS
+
+For help with **inserting data to database**:
+- [GeeksforGeeks](https://www.geeksforgeeks.org/get-current-date-using-python/) - Getting current date using Python
+- [Programiz](https://www.programiz.com/python-programming/datetime/strftime) - Converting 'current date' entry into a string value
+- [Python strftime Cheat Sheet](https://strftime.org/)
 
 ## Acknowledgements
 
