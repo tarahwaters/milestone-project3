@@ -99,8 +99,24 @@ def signout():
     return redirect(url_for("signin"))
 
 
-@app.route("/add_cafe")
+@app.route("/add_cafe", methods=["GET", "POST"])
 def add_cafe():
+    if request.method == "POST":
+        cafe = {
+            "cafe_name": request.form.get("cafe_name"),
+            "city_name": request.form.get("city_name"),
+            "country_name": request.form.get("country_name"),
+            "map_link": request.form.get("map_link"),
+            "cafe_description": request.form.get("cafe_description"),
+            "power_outlets": request.form.get("power_outlets"),
+            "free_wifi": request.form.get("free_wifi"),
+            "wifi_speed": request.form.get("wifi_speed"),
+            "published_by": session["user"] 
+        }
+        mongo.db.cafes.insert_one(cafe)
+        flash("Cafe Added Successfully!")
+        return redirect(url_for("get_cafes"))
+
     countries = mongo.db.countries.find().sort("country_name", 1)
     return render_template("add_cafe.html", countries=countries)
 
