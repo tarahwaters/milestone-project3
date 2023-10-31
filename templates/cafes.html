@@ -32,8 +32,10 @@
                             <p><strong>WiFi Speed:</strong> {{ cafe.wifi_speed }}</p>
                             <p><strong>Outlets?</strong> {{ cafe.power_outlets }}</p>
                             <p><strong>Cafe Description:</strong> {{ cafe.cafe_description }}</p>
-                            <p><strong>Published by:</strong> @{{ cafe.published_by }}</p>
-                            <p><strong>Published on:</strong> {{ cafe.published_on }}</p>
+                            <p>
+                                <strong><em>Published by:</em></strong> <em>@{{ cafe.published_by }}</em><br>
+                                <strong><em>Published on:</em></strong> <em>{{ cafe.published_on }}</em>
+                            </p>
                             <a href="{{ cafe.map_link }}" target="_blank">Google Map Link</a>    
                         </div>
                     </div>
