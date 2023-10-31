@@ -33,6 +33,16 @@ strong {
     font-weight: 600;
 }
 
+.btn-large {
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    padding: 0 20px;
+    font-family: 'League Spartan';
+    letter-spacing: 0.15rem;
+    font-weight: 500;
+}
+
 /* Navbar */
 
 .brand-logo {
