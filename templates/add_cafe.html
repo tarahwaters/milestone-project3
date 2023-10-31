@@ -14,14 +14,14 @@
                 <!-- Cafe Name -->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="cafe_name" name="cafe_name" type="text" class="validate">
+                        <input id="cafe_name" name="cafe_name" type="text" class="validate" required>
                         <label for="cafe_name">Cafe Name</label>
                     </div>
                 </div>
                 <div class="row">
                     <!-- Town / City Name -->
                     <div class="input-field col s12 m6">
-                        <input id="city_name" name="city_name" type="text" class="validate">
+                        <input id="city_name" name="city_name" type="text" class="validate" required>
                         <label for="city_name">Town / City Name</label>
                     </div>
                     <!-- Country Selection -->
@@ -39,7 +39,7 @@
                     <!-- Google Maps Link -->
                     <div class="col s12">
                         <div class="input-field">
-                            <input id="map_link" name="map_link" placeholder="If no link available please type N/A" type="text" class="validate">
+                            <input id="map_link" name="map_link" placeholder="If no link available please type N/A" type="text" class="validate" required>
                             <label for="map_link">Google Maps link</label>
                         </div>
                     </div>
@@ -47,14 +47,14 @@
                 <div class="row">
                     <!-- Cafe Description -->
                     <div class="input-field col s12">
-                        <textarea id="cafe_description" name="cafe_description" placeholder="Tell us a little bit about the cafe.." class="materialize-textarea" data-length="250"></textarea>
+                        <textarea id="cafe_description" name="cafe_description" placeholder="Tell us a little bit about the cafe.." class="materialize-textarea validate" data-length="250" required></textarea>
                         <label for="cafe_description">Cafe Description</label>
                     </div>
                 </div>
                 <div class="row">
                     <!-- Power Outlets -->
                     <div class="input-field col s6">
-                        <select id="power_outlets" name="power_outlets">
+                        <select id="power_outlets" name="power_outlets" class="validate" required>
                             <option value="" disabled selected>Choose your option</option>
                             <option value="Yes - many">Yes - many</option>
                             <option value="Yes - some">Yes - some</option>
@@ -66,7 +66,7 @@
                 <div class="row">
                     <!-- Free Wifi -->
                     <div class="input-field col s6">
-                        <select id="free_wifi" name="free_wifi">
+                        <select id="free_wifi" name="free_wifi" class="validate" required>
                             <option value="" disabled selected>Choose your option</option>
                             <option value="Yes - unlimited">Yes - unlimited</option>
                             <option value="Yes - capped">Yes - capped</option>
@@ -77,7 +77,7 @@
                 </div>
                 <div class="row">
                     <!-- Wifi Speed -->
-                    <div class="input-field col s6">
+                    <div class="input-field col s6" class="validate" required>
                         <select id="wifi_speed" name="wifi_speed">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="Excellent">Excellent</option>
