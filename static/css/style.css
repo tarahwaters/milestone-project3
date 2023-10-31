@@ -104,5 +104,10 @@ nav ul a {
     margin: 0 0.6rem 0 0;
 }
 
-/* Events Page */
+/* All Cafes Page */
 
+.btn-floating.halfway-fab {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
