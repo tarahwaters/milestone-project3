@@ -111,3 +111,12 @@ nav ul a {
     right: 5px;
     bottom: 5px;
 }
+
+.fas.fa-times-circle:before {
+    color: #e91e63;
+    font-size: 2.6rem;
+}
+
+.fas.fa-chevron-up:before {
+    font-size: 2.2rem;
+}
