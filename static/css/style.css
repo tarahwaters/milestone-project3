@@ -108,8 +108,8 @@ nav ul a {
 
 .btn-floating.halfway-fab {
     position: absolute;
-    right: 0.5rem;
-    bottom: 3.5rem;
+    bottom: 0.1rem;
+    right: 0.2rem;
 }
 
 .fas.fa-times-circle:before {
@@ -124,8 +124,6 @@ nav ul a {
 .btn-small {
     margin: 0.25rem;
     position: relative;
-    left: 0.5rem;
-    bottom: 3.5rem;
     font-family: 'League Spartan';
     letter-spacing: 0.15rem;
     font-weight: 500;
@@ -134,4 +132,8 @@ nav ul a {
 .card .card-content {
     padding: 10px 24px 24px 10px;
     border-radius: 0 0 2px 2px;
+}
+
+.card-buttons {
+    padding-top: 0.5rem;
 }
