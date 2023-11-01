@@ -121,7 +121,8 @@ def add_cafe():
         return redirect(url_for("get_cafes"))
 
     countries = mongo.db.countries.find().sort("country_name", 1)
-    return render_template("add_cafe.html", countries=countries)
+    free_wifi_options = mongo.db.free_wifi_options.find().sort("free_wifi", 1)
+    return render_template("add_cafe.html", countries=countries, free_wifi_options=free_wifi_options)
 
 
 @app.route("/edit_cafe/<cafe_id>", methods=["GET", "POST"])
