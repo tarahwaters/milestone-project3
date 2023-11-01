@@ -14,7 +14,8 @@
                 <!-- Cafe Name -->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="cafe_name" name="cafe_name" type="text" class="validate" required>
+                        <input id="cafe_name" name="cafe_name" minlength="5" maxlength="50"
+                             value="{{ cafe.cafe_name }}" type="text" class="validate" required>
                         <label for="cafe_name">Cafe Name</label>
                     </div>
                 </div>
