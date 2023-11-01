@@ -124,6 +124,14 @@ def add_cafe():
     return render_template("add_cafe.html", countries=countries)
 
 
+@app.route("/edit_cafe/<cafe_id>", methods=["GET", "POST"])
+def edit_cafe(cafe_id):
+    cafe = mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})
+
+    countries = mongo.db.countries.find().sort("country_name", 1)
+    return render_template("edit_cafe.html", cafe=cafe, countries=countries)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
