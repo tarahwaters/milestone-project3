@@ -56,7 +56,9 @@
                     <div class="input-field col s6">
                         <select id="power_outlets" name="power_outlets" class="validate" required>
                             <option value="" disabled selected>Choose your option</option>
-                            
+                            {% for power_option in power_options %}
+                            <option value="{{ power_option.power_outlets }}">{{ power_option.power_outlets }}</option>
+                            {% endfor %}
                         </select>
                         <label for="power_outlets">Power Outlets available?</label>
                     </div>
@@ -67,7 +69,7 @@
                         <select id="free_wifi" name="free_wifi" class="validate" required>
                             <option value="" disabled selected>Choose your option</option>
                             {% for free_wifi_option in free_wifi_options %}
-                            <option value="{{ free_wifi_option.free_wifi }}">{{ free_wifi_option.free_wifi }}</option>
+                                <option value="{{ free_wifi_option.free_wifi }}">{{ free_wifi_option.free_wifi }}</option>
                             {% endfor %}
                         </select>
                         <label for="free_wifi">Free WiFi available?</label>
