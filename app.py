@@ -123,7 +123,10 @@ def add_cafe():
     countries = mongo.db.countries.find().sort("country_name", 1)
     power_options = mongo.db.power_options.find().sort("power_outlets", 1)
     free_wifi_options = mongo.db.free_wifi_options.find().sort("free_wifi", 1)
-    return render_template("add_cafe.html", countries=countries, power_options=power_options, free_wifi_options=free_wifi_options)
+    wifi_speed_options = mongo.db.wifi_speed_options.find().sort("wifi_speed", 1)
+    return render_template(
+        "add_cafe.html", countries=countries, power_options=power_options, 
+        free_wifi_options=free_wifi_options, wifi_speed_options=wifi_speed_options)
 
 
 @app.route("/edit_cafe/<cafe_id>", methods=["GET", "POST"])

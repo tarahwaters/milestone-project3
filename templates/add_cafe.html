@@ -80,10 +80,9 @@
                     <div class="input-field col s6" class="validate" required>
                         <select id="wifi_speed" name="wifi_speed">
                             <option value="" disabled selected>Choose your option</option>
-                            <option value="Excellent">Excellent</option>
-                            <option value="Good">Good</option>
-                            <option value="Okay">Okay</option>
-                            <option value="N/A">N/A</option>
+                            {% for wifi_speed_option in wifi_speed_options %}
+                                <option value="{{ wifi_speed_option.wifi_speed }}">{{ wifi_speed_option.wifi_speed }}</option>
+                            {% endfor %}
                             </select>
                         <label for="wifi_speed">Wifi Speed</label>
                     </div>
