@@ -22,7 +22,8 @@
                 <div class="row">
                     <!-- Town / City Name -->
                     <div class="input-field col s12 m6">
-                        <input id="city_name" name="city_name" type="text" class="validate" required>
+                        <input id="city_name" name="city_name" minlength="5" maxlength="50"
+                        value="{{ cafe.city_name }}" type="text" class="validate" required>
                         <label for="city_name">Town / City Name</label>
                     </div>
                     <!-- Country Selection -->
