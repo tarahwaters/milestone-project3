@@ -23,7 +23,7 @@
                     <!-- Town / City Name -->
                     <div class="input-field col s12 m6">
                         <input id="city_name" name="city_name" minlength="5" maxlength="50"
-                        value="{{ cafe.city_name }}" type="text" class="validate" required>
+                            value="{{ cafe.city_name }}" type="text" class="validate" required>
                         <label for="city_name">Town / City Name</label>
                     </div>
                     <!-- Country Selection -->
@@ -45,7 +45,8 @@
                     <!-- Google Maps Link -->
                     <div class="col s12">
                         <div class="input-field">
-                            <input id="map_link" name="map_link" placeholder="If no link available please type N/A" type="text" class="validate" required>
+                            <input id="map_link" name="map_link" placeholder="If no link available please type N/A" 
+                                type="text" value="{{ cafe.map_link }}" class="validate" required>
                             <label for="map_link">Google Maps link</label>
                         </div>
                     </div>
@@ -53,7 +54,8 @@
                 <div class="row">
                     <!-- Cafe Description -->
                     <div class="input-field col s12">
-                        <textarea id="cafe_description" name="cafe_description" placeholder="Tell us a little bit about the cafe.." class="materialize-textarea validate" data-length="250" required></textarea>
+                        <textarea id="cafe_description" name="cafe_description" class="materialize-textarea validate" 
+                            value="{{ cafe.cafe_description }}" data-length="250" required></textarea>
                         <label for="cafe_description">Cafe Description</label>
                     </div>
                 </div>
