@@ -27,7 +27,7 @@
                     <!-- Country Selection -->
                     <div class="input-field col s12 m6">
                         <select id="country_name" name="country_name" class="validate" required>
-                            <option value="" disabled selected>Choose Country</option>
+                            <option value="" disabled>Choose Country</option>
                             {% for country in countries %}
                                 {% if country.country_name == cafe.country_name %}
                                     <option value="{{ country.country_name }}" data-icon="#" selected>{{ country.country_name }}</option>
