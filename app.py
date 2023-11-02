@@ -131,8 +131,25 @@ def add_cafe():
 
 @app.route("/edit_cafe/<cafe_id>", methods=["GET", "POST"])
 def edit_cafe(cafe_id):
-    cafe = mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})
+    if request.method == "POST":
+        current_date = datetime.now().strftime("%d/%m/%Y")
+        edit = {
+            "cafe_name": request.form.get("cafe_name"),
+            "city_name": request.form.get("city_name"),
+            "country_name": request.form.get("country_name"),
+            "map_link": request.form.get("map_link"),
+            "cafe_description": request.form.get("cafe_description"),
+            "power_outlets": request.form.get("power_outlets"),
+            "free_wifi": request.form.get("free_wifi"),
+            "wifi_speed": request.form.get("wifi_speed"),
+            "published_by": session["user"],
+            "published_on": current_date,
+        }
+        mongo.db.cafes.update_one({"_id": ObjectId("cafe_id")}, {"$set": edit})
+        flash("Cafe Updated Successfully!")
+        return redirect(url_for("get_cafes"))
 
+    cafe = mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})
     countries = mongo.db.countries.find().sort("country_name", 1)
     power_options = mongo.db.power_options.find().sort("power_outlets", 1)
     free_wifi_options = mongo.db.free_wifi_options.find().sort("free_wifi", 1)
