@@ -63,7 +63,7 @@
                     <!-- Power Outlets -->
                     <div class="input-field col s6">
                         <select id="power_outlets" name="power_outlets" class="validate" required>
-                            <option value="" disabled >Choose your option</option>
+                            <option value="" disabled>Choose your option</option>
                             {% for power_option in power_options %}
                                 {% if power_option.power_outlets == cafe.power_outlets %}
                                     <option value="{{ power_option.power_outlets }}" selected>{{ power_option.power_outlets }}</option>
@@ -79,10 +79,14 @@
                     <!-- Free Wifi -->
                     <div class="input-field col s6">
                         <select id="free_wifi" name="free_wifi" class="validate" required>
-                            <option value="" disabled selected>Choose your option</option>
-                            <option value="Yes - unlimited">Yes - unlimited</option>
-                            <option value="Yes - capped">Yes - capped</option>
-                            <option value="No">No</option>
+                            <option value="" disabled>Choose your option</option>
+                            {% for free_wifi_option in free_wifi_options %}
+                                {% if free_wifi_option.free_wifi == cafe.free_wifi %}
+                                    <option value="{{ free_wifi_option.free_wifi }}" selected>{{ free_wifi_option.free_wifi }}</option>
+                                {% else %}
+                                    <option value="{{ free_wifi_option.free_wifi }}">{{ free_wifi_option.free_wifi }}</option>
+                                {% endif %}
+                            {% endfor %}
                         </select>
                         <label for="free_wifi">Free WiFi available?</label>
                     </div>
@@ -91,11 +95,14 @@
                     <!-- Wifi Speed -->
                     <div class="input-field col s6" class="validate" required>
                         <select id="wifi_speed" name="wifi_speed">
-                            <option value="" disabled selected>Choose your option</option>
-                            <option value="Excellent">Excellent</option>
-                            <option value="Good">Good</option>
-                            <option value="Okay">Okay</option>
-                            <option value="N/A">N/A</option>
+                            <option value="" disabled>Choose your option</option>
+                            {% for wifi_speed_option in wifi_speed_options %}
+                                {% if wifi_speed_option.wifi_speed == cafe.wifi_speed %}
+                                    <option value="{{ wifi_speed_option.wifi_speed }}" selected>{{ wifi_speed_option.wifi_speed }}</option>
+                                {% else %}
+                                    <option value="{{ wifi_speed_option.wifi_speed }}">{{ wifi_speed_option.wifi_speed }}</option>
+                                {% endif %}
+                            {% endfor %}
                             </select>
                         <label for="wifi_speed">Wifi Speed</label>
                     </div>

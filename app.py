@@ -134,7 +134,12 @@ def edit_cafe(cafe_id):
     cafe = mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})
 
     countries = mongo.db.countries.find().sort("country_name", 1)
-    return render_template("edit_cafe.html", cafe=cafe, countries=countries)
+    power_options = mongo.db.power_options.find().sort("power_outlets", 1)
+    free_wifi_options = mongo.db.free_wifi_options.find().sort("free_wifi", 1)
+    wifi_speed_options = mongo.db.wifi_speed_options.find().sort("wifi_speed", 1)
+    return render_template(
+        "edit_cafe.html", cafe=cafe, countries=countries, power_options=power_options, 
+        free_wifi_options=free_wifi_options, wifi_speed_options=wifi_speed_options)
 
 
 if __name__ == "__main__":
