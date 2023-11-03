@@ -103,7 +103,7 @@ nav ul a {
 /* All Cafes Page */
 
 .btn-floating.halfway-fab {
-    position: absolute;
+    position: relative;
     bottom: 0.1rem;
     right: 0.2rem;
 }
