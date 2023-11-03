@@ -293,6 +293,9 @@ For help with **inserting data to database**:
 - [Programiz](https://www.programiz.com/python-programming/datetime/strftime) - Converting 'current date' entry into a string value
 - [Python strftime Cheat Sheet](https://strftime.org/)
 
+For help with **updating database functionality**:
+- [w3schools](https://www.w3schools.com/python/python_mongodb_update.asp) - Python MongoDB Update method (also debugging help from **Code Insititue Tutor Support**)
+
 ## Acknowledgements
 
 - All my friends and family who tested the game and gave me valuable feedback and support along the way
