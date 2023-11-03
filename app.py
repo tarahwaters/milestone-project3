@@ -175,6 +175,12 @@ def edit_cafe(cafe_id):
         free_wifi_options=free_wifi_options, wifi_speed_options=wifi_speed_options)
 
 
+@app.route("/delete_cafe/<cafe_id>")
+def delete_cafe(cafe_id):
+    mongo.db.cafes.delete_one({"_id": ObjectId(cafe_id)})
+    flash("Cafe Deleted Successfully")
+    return redirect(url_for("get_cafes"))
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
