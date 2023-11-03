@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <!-- Intro -->
+    <div class="container intro-div center-align">
+        <h1>Manage Locations</h1>
+        <p>Below are the countries we currently have avaialable to add cafe details through the Cafeworks page.<br>
+            Please keep checking back as more locations are made available to add your favourite cafes!</p>
+        <a href="{{ url_for('add_cafe') }}" class="btn-large">ADD CAFE</a>
+    </div>
+
+    <div class="row">
+        <div class="card col s12 m6 l4">
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+            <img src="images/sample-1.jpg">
+            <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+            <a href="#">This is a link</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+{% endblock %}
