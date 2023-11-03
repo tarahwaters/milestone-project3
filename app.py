@@ -172,7 +172,7 @@ def edit_cafe(cafe_id):
         }
         print(edit)
         cafe_id = ObjectId(cafe_id)
-        mongo.db.cafes.update_one({"_id": ObjectId("cafe_id")}, {"$set": edit})
+        mongo.db.cafes.update_one({"_id": cafe_id}, {"$set": edit})
         flash("Cafe Updated Successfully!")
 
     cafe = mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})
