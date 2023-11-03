@@ -133,6 +133,15 @@ def add_cafe():
 def edit_cafe(cafe_id):
     if request.method == "POST":
         current_date = datetime.now().strftime("%d/%m/%Y")
+        print(request.form.get("cafe_name"))
+        print(request.form.get("city_name"))
+        print(request.form.get("country_name"))
+        print(request.form.get("map_link"))
+        print(request.form.get("cafe_description"))
+        print(request.form.get("power_outlets"))
+        print(request.form.get("free_wifi"))
+        print(request.form.get("wifi_speed"))
+        print(session["user"])
         mongo.db.cafes.update_one(
             {"_id": ObjectId(cafe_id)}, {
                 '$set': {
