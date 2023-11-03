@@ -133,6 +133,22 @@ def add_cafe():
 def edit_cafe(cafe_id):
     if request.method == "POST":
         current_date = datetime.now().strftime("%d/%m/%Y")
+        mongo.db.cafes.update_one(
+            {"_id": ObjectId(cafe_id)}, {
+                '$set': {
+                    "cafe_name": request.form.get("cafe_name"),
+                    "city_name": request.form.get("city_name"),
+                    "country_name": request.form.get("country_name"),
+                    "map_link": request.form.get("map_link"),
+                    "cafe_description": request.form.get("cafe_description"),
+                    "power_outlets": request.form.get("power_outlets"),
+                    "free_wifi": request.form.get("free_wifi"),
+                    "wifi_speed": request.form.get("wifi_speed"),
+                    "published_by": session["user"],
+                    "published_on": current_date,
+                }
+            }
+        )
         edit = {
             "cafe_name": request.form.get("cafe_name"),
             "city_name": request.form.get("city_name"),
@@ -145,9 +161,10 @@ def edit_cafe(cafe_id):
             "published_by": session["user"],
             "published_on": current_date,
         }
+        print(edit)
+        cafe_id = ObjectId(cafe_id)
         mongo.db.cafes.update_one({"_id": ObjectId("cafe_id")}, {"$set": edit})
         flash("Cafe Updated Successfully!")
-        return redirect(url_for("get_cafes"))
 
     cafe = mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})
     countries = mongo.db.countries.find().sort("country_name", 1)
