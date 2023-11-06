@@ -11,21 +11,21 @@
 
     <div class="container">
         <div class="row">
+            {% for country in countries %}
             <div class="card col s12 m6 l4">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                <a href="#">This is a link</a>
-                </div>
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="https://materializecss.com/images/sample-1.jpg">
+                    </div>
+                    <!-- Edit / Delete Buttons -->
+                    <div class=" card-buttons waves-effect waves-block waves-light">
+                        <a href="#" class="waves-effect waves-light btn-small">Edit</a>
+                        <a href="#" class="waves-effect waves-light btn-small">Delete</a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">{{ country.country_name }}</span>
+                    </div>
             </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 
