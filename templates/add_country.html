@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <!-- Add Cafe Intro -->
+    <div class="container intro-div center-align">
+        <h1>Add Country</h1>
+        <p>Add a new country to the Cafeworks database.</p>
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+        <div class="row">
+            <form class="col s12" method="POST" action="{{ url_for('add_country') }}">
+                    <!-- Country Name -->
+                    <div class="input-field col s12 m6">
+                        <input id="country_name" name="country_name" type="text" class="validate" required>
+                        <label for="country_name">Country Name</label>
+                    </div>
+                <div class="row">
+                    <!-- Submit Button -->
+                    <div class="col s12 center-align">
+                        <button class="btn-large waves-effect waves-light" type="submit">
+                            Add Country
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
