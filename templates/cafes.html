@@ -3,10 +3,32 @@
 
     <!-- Intro & Add Cafe Button -->
     <div class="container intro-div center-align">
-        <h1>Remote Working Cafes</h1>
-        <p>Explore cafes suitable for remote working in different locations around the world.<br>
-            Click on a cafe for more details. Or perhaps add your own cafe recommendation to share with others?</p>
-        <a href="{{ url_for('add_cafe') }}" class="btn-large">ADD CAFE</a>
+        <div class="row">
+            <h1>Remote Working Cafes</h1>
+            <p>Explore cafes suitable for remote working in different locations around the world.<br>
+                Click on a cafe for more details. Or perhaps add your own cafe recommendation to share with others?
+            </p>
+        </div>
+        <div class="row">
+            <form action="#" method="POST" class="col s12">
+                <div class="row valign-wrapper center-align">
+                    <div class=" input-field col s12 m8">
+                        <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
+                        <input type="text" name="search" id="search" minlength="3" class="validate">
+                        <label for="search">Search Cafes</label>
+                    </div>
+                    <div class="col s12 m4">
+                        <a href="#" class="btn-small red">Reset</a>
+                        <button type="submit" class="btn-small">
+                            <i class="fas fa-search left"></i>Search
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <a href="{{ url_for('add_cafe') }}" class="btn-large">ADD CAFE</a>
+        </div>
     </div>
     
     <!-- Cafe Card -->
