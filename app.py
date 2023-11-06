@@ -202,6 +202,20 @@ def add_country():
 
 @app.route("/edit_country/<country_id>", methods=["GET", "POST"])
 def edit_country(country_id):
+    if request.method == "POST":
+        edit = {
+            "country_name": request.form.get("country_name")
+        }
+        mongo.db.countries.update_one(
+            {"_id": ObjectId(country_id)}, {
+                '$set': {
+                    "country_name": request.form.get("country_name")
+                }
+            }
+        )
+        flash("Country Successfully Updated")
+        return redirect(url_for("get_countries"))
+        
     country = mongo.db.countries.find_one({"_id": ObjectId(country_id)})
     return render_template("edit_country.html", country=country)
 
