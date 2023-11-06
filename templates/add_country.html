@@ -13,7 +13,8 @@
             <form class="col s12" method="POST" action="{{ url_for('add_country') }}">
                     <!-- Country Name -->
                     <div class="input-field col s12 m6">
-                        <input id="country_name" name="country_name" type="text" class="validate" required>
+                        <input id="country_name" name="country_name" type="text" 
+                            minlength="3" maxlength="25" class="validate" required>
                         <label for="country_name">Country Name</label>
                     </div>
                 <div class="row">
