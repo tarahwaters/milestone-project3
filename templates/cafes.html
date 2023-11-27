@@ -32,8 +32,12 @@
         </div>
     </div>
     
-    <!-- Cafe Card -->
+    
+        {% if request.path == url_for('search') %}
+        <p class="center-align">Showing results for <i>{{query}}</i></p>
+        {% endif %}
         {% if cafes|length > 0 %}
+        <!-- Cafe Card -->
         <div class="container">
             <div class="row">
                     {% for cafe in cafes %}

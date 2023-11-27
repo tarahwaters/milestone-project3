@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_cafes")
 def get_cafes():
-    cafes = mongo.db.cafes.find()
+    cafes = list(mongo.db.cafes.find())
     return render_template("cafes.html", cafes=cafes)
 
 
@@ -29,7 +29,8 @@ def get_cafes():
 def search():
     query = request.form.get("query")
     cafes = list(mongo.db.cafes.find({"$text": {"$search": query}}))
-    return render_template("cafes.html", cafes=cafes)
+    countries = mongo.db.countries.find().sort("country_name", 1)
+    return render_template("cafes.html", cafes=cafes, countries=countries, query=query)
 
 
 @app.route("/register", methods=["GET", "POST"])
