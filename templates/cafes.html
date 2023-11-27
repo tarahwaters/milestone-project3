@@ -10,6 +10,9 @@
             </p>
         </div>
         <div class="row">
+            <a href="{{ url_for('add_cafe') }}" class="btn-large">ADD CAFE</a>
+        </div>
+        <div class="row">
             <form action="{{ url_for('search') }}" method="POST" class="col s12">
                 <div class="row valign-wrapper center-align">
                     <div class=" input-field col s12 m8">
@@ -26,16 +29,12 @@
                     </div>
                 </div>
             </form>
-        </div>
-        <div class="row">
-            <a href="{{ url_for('add_cafe') }}" class="btn-large">ADD CAFE</a>
+            {% if request.path == url_for('search') %}
+                <h3 class="center-align">Showing results for <i>"{{query}}"</i></h3>
+            {% endif %}
         </div>
     </div>
     
-    
-        {% if request.path == url_for('search') %}
-        <p class="center-align">Showing results for <i>{{query}}</i></p>
-        {% endif %}
         {% if cafes|length > 0 %}
         <!-- Cafe Card -->
         <div class="container">
