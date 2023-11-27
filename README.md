@@ -296,6 +296,11 @@ For help with **inserting data to database**:
 For help with **updating database functionality**:
 - [w3schools](https://www.w3schools.com/python/python_mongodb_update.asp) - Python MongoDB Update method (also debugging help from **Code Insititue Tutor Support**)
 
+For help with "**search functionality errors**:
+- [StackOverflow](https://stackoverflow.com/questions/16204077/typeerror-object-of-type-cursor-has-no-len) - TypeError: object of type 'Cursor' has no len()
+- [MongoDB Manual](https://www.mongodb.com/docs/atlas/atlas-search/tutorial/iterate-cursor-tutorial/) - How to Iterate Your Cursor to View All Results
+- **Code Institute Tutor Support** - realising that the python **list()** function was necessary in routing to implement the python **len()** during a search (to check if there are any matching results in the database), otherwise it reverts to **MongoDB Cursor** which caused the TypeError
+
 ## Acknowledgements
 
 - All my friends and family who tested the game and gave me valuable feedback and support along the way
