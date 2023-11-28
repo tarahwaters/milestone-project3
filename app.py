@@ -29,7 +29,7 @@ def signin_required(f):
             return f(*args, **kwargs)
         # "user" not in session
         else:
-            flash("You must sign in or register with us first!")
+            flash("Please sign in to your account first!")
             return redirect(url_for("signin"))
 
     return signin_wrap
