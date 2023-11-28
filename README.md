@@ -261,9 +261,8 @@ A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/conf
 
 ## Credits
 
-For help with...:
-- [Link description](#)
-- [Link description](#)
+For help with **signin_required decorator**:
+- [Python Programming Tutorials](https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/) - Flask Decorators - Login_Required pages Flask Tutorial (code used for **"signin_required" decorator** in app.py)
 
 For help with...:
 - [Link description](#)
@@ -300,6 +299,7 @@ For help with **search functionality errors**:
 - [StackOverflow](https://stackoverflow.com/questions/16204077/typeerror-object-of-type-cursor-has-no-len) - TypeError: object of type 'Cursor' has no len()
 - [MongoDB Manual](https://www.mongodb.com/docs/atlas/atlas-search/tutorial/iterate-cursor-tutorial/) - How to Iterate Your Cursor to View All Results
 - **Code Institute Tutor Support** - realising that the python **list()** function was necessary in routing to implement the python **len()** during a search (to check if there are any matching results in the database), otherwise it reverts to **MongoDB Cursor** which caused the TypeError
+
 
 ## Acknowledgements
 
