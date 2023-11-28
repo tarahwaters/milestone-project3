@@ -18,6 +18,20 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+
+# Signin required decorator
+def signin_required(f):
+    @wraps(f)
+    def signin_wrap(*args, **kwargs):
+        if 'logged_in' in session:
+            return f(*args, **kwargs)
+        else:
+            flash("You need to signin first!")
+            return redirect(url_for("signin"))
+
+    return signin_wrap
+
+
 @app.route("/")
 @app.route("/get_cafes")
 def get_cafes():
