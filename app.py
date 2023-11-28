@@ -24,10 +24,12 @@ mongo = PyMongo(app)
 def signin_required(f):
     @wraps(f)
     def signin_wrap(*args, **kwargs):
-        if 'logged_in' in session:
+        # check if "user" is already in session
+        if "user" in session:
             return f(*args, **kwargs)
+        # "user" not in session
         else:
-            flash("You need to signin first!")
+            flash("You must sign in or register with us first!")
             return redirect(url_for("signin"))
 
     return signin_wrap
@@ -74,33 +76,40 @@ def register():
 
 @app.route("/signin", methods={"GET", "POST"})
 def signin():
-    if request.method == "POST":
-        # check if username exists in database
-        existing_user = mongo.db.users.find_one(
-            {"username": request.form.get("username").lower()}
-        )
+    if "user" not in session:
+        # only when there is no session["user"] cookie present
+        if request.method == "POST":
+            # check if username exists in database
+            existing_user = mongo.db.users.find_one(
+                {"username": request.form.get("username").lower()}
+            )
 
-        if existing_user:
-            # make sure hashed passwords match user input
-            if check_password_hash(
-                existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {}".format(
-                        request.form.get("username")))
-                    return redirect(url_for(
-                        "profile", username=session["user"]))
+            if existing_user:
+                # make sure hashed passwords match user input
+                if check_password_hash(
+                    existing_user["password"], request.form.get("password")):
+                        session["user"] = request.form.get("username").lower()
+                        flash("Welcome, {}".format(
+                            request.form.get("username")))
+                        return redirect(url_for(
+                            "profile", username=session["user"]))
 
+                else:
+                    # passwords do not match
+                    flash("Sorry! Incorrect Username and/or Password")
+                    return redirect(url_for("signin"))
+                
             else:
-                # passwords do not match
+                # username doesn't exist in database
                 flash("Sorry! Incorrect Username and/or Password")
                 return redirect(url_for("signin"))
-            
-        else:
-            # username doesn't exist in database
-            flash("Sorry! Incorrect Username and/or Password")
-            return redirect(url_for("signin"))
 
-    return render_template("signin.html")
+        return render_template("signin.html")
+    
+    # user already signed in, then direct to user profile
+    return redirect(url_for("profile", username=session["user"]))
+
+
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
