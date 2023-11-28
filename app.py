@@ -116,6 +116,7 @@ def profile(username):
 
 
 @app.route("/signout")
+@signin_required
 def signout():
     # remove user from session cookies
     flash("You have successfully been signed out")
@@ -124,6 +125,7 @@ def signout():
 
 
 @app.route("/add_cafe", methods=["GET", "POST"])
+@signin_required
 def add_cafe():
     if request.method == "POST":
         current_date = datetime.now().strftime("%d/%m/%Y")
