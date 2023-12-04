@@ -39,7 +39,8 @@ def signin_required(f):
 @app.route("/get_cafes")
 def get_cafes():
     cafes = list(mongo.db.cafes.find())
-    return render_template("cafes.html", cafes=cafes)
+    countries = list(mongo.db.countries.find())
+    return render_template("cafes.html", cafes=cafes, countries=countries)
 
 
 @app.route("/search", methods=["GET", "POST"])
@@ -226,7 +227,8 @@ def get_countries():
 def add_country():
     if request.method == "POST":
         country = {
-            "country_name": request.form.get("country_name")
+            "country_name": request.form.get("country_name"),
+            "image_name": request.gorm.get("image_name")
         }
         mongo.db.countries.insert_one(country)
         flash("New Country Added!")
@@ -238,12 +240,14 @@ def add_country():
 def edit_country(country_id):
     if request.method == "POST":
         edit = {
-            "country_name": request.form.get("country_name")
+            "country_name": request.form.get("country_name"),
+            "image_name": request.form.get("image_name")
         }
         mongo.db.countries.update_one(
             {"_id": ObjectId(country_id)}, {
                 '$set': {
-                    "country_name": request.form.get("country_name")
+                    "country_name": request.form.get("country_name"),
+                    "image_name": request.form.get("image_name")
                 }
             }
         )
