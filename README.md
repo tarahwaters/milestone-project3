@@ -300,6 +300,10 @@ For help with **search functionality errors**:
 - [MongoDB Manual](https://www.mongodb.com/docs/atlas/atlas-search/tutorial/iterate-cursor-tutorial/) - How to Iterate Your Cursor to View All Results
 - **Code Institute Tutor Support** - realising that the python **list()** function was necessary in routing to implement the python **len()** during a search (to check if there are any matching results in the database), otherwise it reverts to **MongoDB Cursor** which caused the TypeError
 
+For help with **displaying country images using jinja looping**:
+- [StackOverflow](https://stackoverflow.com/questions/33355159/how-can-i-dynamically-render-images-from-my-images-folder-using-jinja-and-flask) - How can I dynamically render images from my images folder using Jinja and Flask?
+- **Code Institute Tutor Support** - for the advice to link the static image filename to the database via "countries.image_name", then support fixing the bugs when using jinja to loop through and display the appropriate country image
+
 
 ## Acknowledgements
 
