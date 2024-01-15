@@ -264,6 +264,10 @@ A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/conf
 For help with **signin_required decorator**:
 - [Python Programming Tutorials](https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/) - Flask Decorators - Login_Required pages Flask Tutorial (code used for **"signin_required" decorator** in app.py)
 
+For help with **delete confirmation modals**:
+- [Materialize](https://materializecss.com/modals.html#!) - Modal documentation with trigger button (plus js initialization)
+- [Dynjashik's MSP3-Movie-collection app](https://github.com/Dynjashik/MSP3-Movie-collection/blob/master/templates/movie.html) - submitted for Code Institute MS3 project ([live link to project](http://my-milestone-project3.herokuapp.com/home)) used as a working reference for the Materialize code
+
 For help with...:
 - [Link description](#)
 - [Link description](#)
