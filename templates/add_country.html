@@ -12,10 +12,16 @@
         <div class="row">
             <form class="col s12" method="POST" action="{{ url_for('add_country') }}">
                     <!-- Country Name -->
-                    <div class="input-field col s12 m6">
+                    <div class="input-field col s12">
                         <input id="country_name" name="country_name" type="text" 
-                            minlength="3" maxlength="25" class="validate" required>
+                            minlength="3" maxlength="30" class="validate" required>
                         <label for="country_name">Country Name</label>
+                    </div>
+                    <!-- Image Name -->
+                    <div class="input-field col s12">
+                        <input id="image_name" name="image_name" type="text" 
+                            minlength="3" maxlength="30" class="validate" required>
+                        <label for="image_name">Image Name</label>Remember to use the correct image file name <strong>(e.g. image-thailand.webp)</strong>
                     </div>
                 <div class="row">
                     <!-- Submit Button -->

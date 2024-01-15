@@ -13,9 +13,15 @@
             <form class="col s12" method="POST" action="{{ url_for('edit_country', country_id=country._id) }}">
                     <!-- Country Name -->
                     <div class="input-field col s12 m6">
-                        <input id="country_name" name="country_name" minlength="3" maxlength="25"
+                        <input id="country_name" name="country_name" minlength="3" maxlength="30"
                             value="{{ country.country_name }}" type="text" class="validate" required>
                         <label for="country_name">Country Name</label>
+                    </div>
+                    <!-- Image Name -->
+                    <div class="input-field col s12">
+                        <input id="image_name" name="image_name" minlength="3" maxlength="30"
+                            value="{{ country.image_name }}" type="text" class="validate" required>
+                        <label for="image_name">Image Name</label>Remember to use the correct image file name <strong>(e.g. image-thailand.webp)</strong>
                     </div>
                 <div class="row">
                     <!-- Submit Button -->
