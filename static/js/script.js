@@ -6,6 +6,9 @@ $(document).ready(function(){
     $(".sidenav").sidenav({edge: "right"});
     $('select').formSelect();
     $('textarea#cafe_description').characterCounter();
+    $('.modal').modal();
+    $(".flash-modal").modal();
+    $(".flash-modal").modal("open");
     /*
         Custom validation for Materialize Select Options for form 
         - from Code Institute TaskManager Walkthrough Tutorial
