@@ -221,6 +221,13 @@ def delete_cafe(cafe_id):
     return redirect(url_for("get_cafes"))
 
 
+@app.route("/delete_user_cafe/<cafe_id>")
+def delete_user_cafe(cafe_id):
+    mongo.db.cafes.delete_one({"_id": ObjectId(cafe_id)})
+    flash("Cafe Deleted Successfully")
+    return redirect(url_for("profile", username=session["user"]))
+
+
 @app.route("/get_countries")
 def get_countries():
     countries = list(mongo.db.countries.find().sort("country_name", 1))
