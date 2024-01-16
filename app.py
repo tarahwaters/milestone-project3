@@ -203,6 +203,7 @@ def edit_cafe(cafe_id):
         cafe_id = ObjectId(cafe_id)
         mongo.db.cafes.update_one({"_id": cafe_id}, {"$set": edit})
         flash("Cafe Updated Successfully!")
+        return redirect(url_for("get_cafes"))
 
     cafe = mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})
     countries = mongo.db.countries.find().sort("country_name", 1)
