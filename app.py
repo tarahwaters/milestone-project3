@@ -111,16 +111,18 @@ def signin():
     return redirect(url_for("profile", username=session["user"]))
 
 
-
-
 @app.route("/profile/<username>", methods=["GET", "POST"])
-def profile(username):
-    # retrieve the session user's username from database
-    username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
-    
+@signin_required
+def profile(username):  
     if session["user"]:
-        return render_template("profile.html", username=username)
+        # retrieve the session user's username from database
+        username = mongo.db.users.find_one(
+            {"username": session["user"]})["username"] 
+        # retrieve only the user's published cafes 
+        user_cafes = list(
+            mongo.db.cafes.find({"published_by": username}))
+        return render_template(
+            "profile.html", username=username, user_cafes=user_cafes, countries=countries)
     
     return redirect(url_for("signin"))
 

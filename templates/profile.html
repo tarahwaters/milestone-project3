@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 
+<main class="container">
+    <!-- Profile Username -->
     <div class="row">
         <div class="col s12 m8 offset-m2">
             <div class="card-panel">
@@ -11,4 +13,75 @@
         </div>
     </div>
 
+    <h4 class="center-align">My Cafes</h4>
+    {% if user_cafes|length > 0 %}
+    <!-- My Cafe Cards -->
+    <div class="container">
+        <div class="row">
+                {% for cafe in user_cafes %}
+                <div class="card col s12 m6 l4">
+                    <!-- Card Image -->
+                    <div class="card-image waves-effect waves-block waves-light">
+                        {% for country in countries %}
+                            {% if cafe.country_name == country.country_name %}
+                                <img class="activator" src="/static/images/{{ country.image_name }}">
+                            {% endif %}
+                        {% else %}
+                            <img class="activator" src="https://materializecss.com/images/sample-1.jpg">
+                        {% endfor %}
+                    </div>
+                    <!-- Edit / Delete Buttons -->
+                    <div class="card-buttons waves-effect waves-block waves-light">
+                        <a class="activator btn-floating halfway-fab waves-effect waves-light red lighten-2 right"><i class="fas fa-chevron-up"></i></a>
+                        {% if session.user|lower == cafe.published_by|lower %}
+                        <a href="{{ url_for('edit_cafe', cafe_id=cafe._id) }}" class="waves-effect waves-light btn-small left">Edit</a>
+                        <!-- Delete Modal Trigger -->
+                        <a href="#modal{{cafe._id}}" class="modal-trigger waves-effect waves-light btn-small red lighten-3 left">Delete</a>
+                        <!-- Delete Modal Structure-->
+                        <div id="modal{{cafe._id}}" class="modal">
+                            <div class="modal-content">
+                                <h5>Are you sure want to delete this cafe?</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="{{ url_for('delete_cafe', cafe_id=cafe._id) }}"
+                                    class="modal-close btn-small red lighten-3">Yes</a>
+                                <a class="modal-close btn-small">No</a>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    <!-- Cafe Details -->
+                    <div class="card-content">
+                        <span class="card-title activator">{{ cafe.cafe_name }}</span>
+                        <p><strong>Country:</strong> {{ cafe.country_name }}</p>
+                        <p><strong>City:</strong> {{ cafe.city_name }}</p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title activator">{{ cafe.cafe_name }}<i class="fas fa-times-circle right"></i></span>
+                        <p>
+                            <strong>Country:</strong> {{ cafe.country_name }}<br>
+                            <strong>City:</strong> {{ cafe.city_name }}<br>
+                            <a href="{{ cafe.map_link }}" target="_blank">Google Map Link</a> 
+                        </p>
+                        <p>
+                            <strong>WiFi?</strong> {{ cafe.free_wifi }}<br>
+                            <strong>WiFi Speed:</strong> {{ cafe.wifi_speed }}<br>
+                            <strong>Outlets?</strong> {{ cafe.power_outlets }}
+                        </p>
+                        <p><strong>Cafe Description:</strong> {{ cafe.cafe_description }}</p>
+                        <p>
+                            <strong><em>Published by:</em></strong> <em>@{{ cafe.published_by }}</em><br>
+                            <strong><em>Published on:</em></strong> <em>{{ cafe.published_on }}</em>
+                        </p>   
+                    </div>
+                </div>
+              {% endfor %}
+          </div>
+    </div>
+    {% else %}
+        <h2 class="red-text text-darken-2 center-align">No Cafes Added</h2>
+    {% endif %}
+
+
+</main>
 {% endblock %}
