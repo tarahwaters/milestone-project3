@@ -121,6 +121,8 @@ def profile(username):
         # retrieve only the user's published cafes 
         user_cafes = list(
             mongo.db.cafes.find({"published_by": username}))
+        # retrieve image data for countries
+        countries = list(mongo.db.countries.find())
         return render_template(
             "profile.html", username=username, user_cafes=user_cafes, countries=countries)
     
