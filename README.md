@@ -264,6 +264,9 @@ A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/conf
 For help with **signin_required decorator**:
 - [Python Programming Tutorials](https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/) - Flask Decorators - Login_Required pages Flask Tutorial (code used for **"signin_required" decorator** in app.py)
 
+For help with **admin_required decorator**:
+- [Perplexity.AI](https://www.perplexity.ai/) - used to help generate and adapt the code, along with troubleshooting and understanding the methodology
+
 For help with **delete confirmation modals**:
 - [Materialize](https://materializecss.com/modals.html#!) - Modal documentation with trigger button (plus js initialization)
 - [Dynjashik's MSP3-Movie-collection app](https://github.com/Dynjashik/MSP3-Movie-collection/blob/master/templates/movie.html) - submitted for Code Institute MS3 project ([live link to project](http://my-milestone-project3.herokuapp.com/home)) used as a working reference for the Materialize code
@@ -286,6 +289,10 @@ For help with...:
 - [StackOverflow](https://stackoverflow.com/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
 - [JavaScript Syntax - W3 Schools](https://www.w3schools.com/js/js_syntax.asp)
+
+For help with **admin authentication**:
+- [Flask-Admin Documentation](https://flask-admin.readthedocs.io/en/latest/introduction/#securing-admin-views) - for understanding the different methods available for admin authentication available when using Flask
+- [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-add-authentication-to-your-app-with-flask-login) - Admin authentication using Flask-Login
 
 For help with **styling queries**:
 - [Google Fonts Manual](https://fonts.google.com/knowledge/using_type/manual_kerning_is_rarely_required) - Adjusting letter spacing for brand logo font
