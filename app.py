@@ -34,6 +34,19 @@ def signin_required(f):
 
     return signin_wrap
 
+# Admin required decorator 
+# code credit from https://www.perplexity.ai/ and
+# https://flask-admin.readthedocs.io/en/latest/introduction/#securing-admin-views
+def admin_required(f):
+    @wraps(f)
+    def admin_wrap(*args, **kwargs):
+        user = mongo.db.users.find_one({'username': 'admin'})
+        if user and user['is_admin']:
+            return f(*args, **kwargs)
+        else:
+            return redirect(url_for('signin'))
+    return admin_wrap
+
 
 @app.route("/")
 @app.route("/get_cafes")
@@ -230,12 +243,14 @@ def delete_user_cafe(cafe_id):
 
 
 @app.route("/get_countries")
+@admin_required
 def get_countries():
     countries = list(mongo.db.countries.find().sort("country_name", 1))
     return render_template("countries.html", countries=countries)
 
 
 @app.route("/add_country", methods=["GET", "POST"])
+@admin_required
 def add_country():
     if request.method == "POST":
         country = {
@@ -249,6 +264,7 @@ def add_country():
 
 
 @app.route("/edit_country/<country_id>", methods=["GET", "POST"])
+@admin_required
 def edit_country(country_id):
     if request.method == "POST":
         edit = {
@@ -271,6 +287,7 @@ def edit_country(country_id):
 
 
 @app.route("/delete_country/<country_id>")
+@admin_required
 def delete_country(country_id):
     mongo.db.countries.delete_one({"_id": ObjectId(country_id)})
     flash("Country Successfully Deleted")
