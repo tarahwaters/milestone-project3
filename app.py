@@ -48,6 +48,13 @@ def admin_required(f):
     return admin_wrap
 
 
+def is_admin():
+    if 'is_admin' in session and session['is_admin']:
+        return True
+    else:
+        return False
+
+
 @app.route("/")
 @app.route("/get_cafes")
 def get_cafes():
@@ -129,15 +136,23 @@ def signin():
 def profile(username):  
     if session["user"]:
         # retrieve the session user's username from database
-        username = mongo.db.users.find_one(
-            {"username": session["user"]})["username"] 
-        # retrieve only the user's published cafes 
-        user_cafes = list(
-            mongo.db.cafes.find({"published_by": username}))
+        session_username = session["user"]
+        user = mongo.db.users.find_one(
+            {"username": session_username})
+        # # retrieve only the user's published cafes 
+        # user_cafes = list(
+        #     mongo.db.cafes.find({"published_by": session_username}))
+        print(f"Is Admin: {is_admin()}")       
+        if is_admin():
+            cafes = list(mongo.db.cafes.find())
+        else:
+            cafes = list(mongo.db.cafes.find({"published_by": session_username}))
+
         # retrieve image data for countries
         countries = list(mongo.db.countries.find())
+
         return render_template(
-            "profile.html", username=username, user_cafes=user_cafes, countries=countries)
+            "profile.html", username=session_username,  cafes=cafes, countries=countries)
     
     return redirect(url_for("signin"))
 
@@ -185,38 +200,44 @@ def add_cafe():
 def edit_cafe(cafe_id):
     if request.method == "POST":
         current_date = datetime.now().strftime("%d/%m/%Y")
-        mongo.db.cafes.update_one(
-            {"_id": ObjectId(cafe_id)}, {
-                '$set': {
-                    "cafe_name": request.form.get("cafe_name"),
-                    "city_name": request.form.get("city_name"),
-                    "country_name": request.form.get("country_name"),
-                    "map_link": request.form.get("map_link"),
-                    "cafe_description": request.form.get("cafe_description"),
-                    "power_outlets": request.form.get("power_outlets"),
-                    "free_wifi": request.form.get("free_wifi"),
-                    "wifi_speed": request.form.get("wifi_speed"),
-                    "published_by": session["user"],
-                    "published_on": current_date,
+        if is_admin() or (
+            session["user"] == mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})['published_by']):
+            # Edits the cafe for admin user or published owner of the cafe
+            mongo.db.cafes.update_one(
+                {"_id": ObjectId(cafe_id)}, {
+                    '$set': {
+                        "cafe_name": request.form.get("cafe_name"),
+                        "city_name": request.form.get("city_name"),
+                        "country_name": request.form.get("country_name"),
+                        "map_link": request.form.get("map_link"),
+                        "cafe_description": request.form.get("cafe_description"),
+                        "power_outlets": request.form.get("power_outlets"),
+                        "free_wifi": request.form.get("free_wifi"),
+                        "wifi_speed": request.form.get("wifi_speed"),
+                        "published_by": session["user"],
+                        "published_on": current_date,
+                    }
                 }
+            )
+            edit = {
+                "cafe_name": request.form.get("cafe_name"),
+                "city_name": request.form.get("city_name"),
+                "country_name": request.form.get("country_name"),
+                "map_link": request.form.get("map_link"),
+                "cafe_description": request.form.get("cafe_description"),
+                "power_outlets": request.form.get("power_outlets"),
+                "free_wifi": request.form.get("free_wifi"),
+                "wifi_speed": request.form.get("wifi_speed"),
+                "published_by": session["user"],
+                "published_on": current_date,
             }
-        )
-        edit = {
-            "cafe_name": request.form.get("cafe_name"),
-            "city_name": request.form.get("city_name"),
-            "country_name": request.form.get("country_name"),
-            "map_link": request.form.get("map_link"),
-            "cafe_description": request.form.get("cafe_description"),
-            "power_outlets": request.form.get("power_outlets"),
-            "free_wifi": request.form.get("free_wifi"),
-            "wifi_speed": request.form.get("wifi_speed"),
-            "published_by": session["user"],
-            "published_on": current_date,
-        }
-        cafe_id = ObjectId(cafe_id)
-        mongo.db.cafes.update_one({"_id": cafe_id}, {"$set": edit})
-        flash("Cafe Updated Successfully!")
-        return redirect(url_for("get_cafes"))
+            flash("Cafe Updated Successfully!")
+            return redirect(url_for("get_cafes"))
+            
+        else:
+            # When user is not an admin or the published owner of the cafe
+            flash("You are not authorized to perform this action")
+            return redirect(url_for("get_cafes"))
 
     cafe = mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})
     countries = mongo.db.countries.find().sort("country_name", 1)
@@ -230,16 +251,32 @@ def edit_cafe(cafe_id):
 
 @app.route("/delete_cafe/<cafe_id>")
 def delete_cafe(cafe_id):
-    mongo.db.cafes.delete_one({"_id": ObjectId(cafe_id)})
-    flash("Cafe Deleted Successfully")
-    return redirect(url_for("get_cafes"))
+    if is_admin() or (
+            session["user"] == mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})['published_by']):
+        # Deletes the cafe for admin user or cafe owner
+        mongo.db.cafes.delete_one({"_id": ObjectId(cafe_id)})
+        flash("Cafe Deleted Successfully")
+        return redirect(url_for("get_cafes"))
+    else:
+        flash("You are not authorized to perform this action")
+        return redirect(url_for("get_cafes"))
+    
+    cafe = mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})
+    return render_template("cafes.html", cafe=cafe)
 
 
 @app.route("/delete_user_cafe/<cafe_id>")
 def delete_user_cafe(cafe_id):
-    mongo.db.cafes.delete_one({"_id": ObjectId(cafe_id)})
-    flash("Cafe Deleted Successfully")
-    return redirect(url_for("profile", username=session["user"]))
+    cafe = mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})
+    if is_admin() or (
+            session["user"] == mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})['published_by']):
+        # Deletes the cafe for admin user or cafe owner via the profile page
+        mongo.db.cafes.delete_one({"_id": ObjectId(cafe_id)})
+        flash("Cafe Deleted Successfully")
+        return redirect(url_for("profile", username=session["user"]))  # Redirect to user's profile
+    else:
+        flash("You are not authorized to perform this action")
+        return redirect(url_for("get_cafes"))
 
 
 @app.route("/get_countries")

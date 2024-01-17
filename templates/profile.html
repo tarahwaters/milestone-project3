@@ -14,11 +14,11 @@
     </div>
 
     <h4 class="center-align">My Cafes</h4>
-    {% if user_cafes|length > 0 %}
+    {% if cafes|length > 0 %}
     <!-- My Cafe Cards -->
     <div class="container">
         <div class="row">
-                {% for cafe in user_cafes %}
+                {% for cafe in cafes %}
                 <div class="card col s12 m6 l4">
                     <!-- Card Image -->
                     <div class="card-image waves-effect waves-block waves-light">
