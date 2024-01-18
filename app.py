@@ -140,7 +140,6 @@ def profile(username):
         if "admin" in session and session["admin"]:
             # retrieves all cafes for admin users
             cafes = list(mongo.db.cafes.find())
-            print("Admin user")
         else:
             # retrieves on user published cafes for non-admin users
             cafes = list(mongo.db.cafes.find({"published_by": session_username}))
