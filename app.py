@@ -48,13 +48,6 @@ def admin_required(f):
     return admin_wrap
 
 
-def is_admin():
-    if 'is_admin' in session and session['is_admin']:
-        return True
-    else:
-        return False
-
-
 @app.route("/")
 @app.route("/get_cafes")
 def get_cafes():
@@ -110,6 +103,11 @@ def signin():
                 if check_password_hash(
                     existing_user["password"], request.form.get("password")):
                         session["user"] = request.form.get("username").lower()
+                        username = existing_user.get("username")
+                        # for admin users
+                        if existing_user.get("username") == "admin":
+                            # set the admin session variable
+                            session["admin"] = True
                         flash("Welcome, {}".format(
                             request.form.get("username")))
                         return redirect(url_for(
@@ -138,16 +136,15 @@ def profile(username):
         # retrieve the session user's username from database
         session_username = session["user"]
         user = mongo.db.users.find_one(
-            {"username": session_username})
-        # # retrieve only the user's published cafes 
-        # user_cafes = list(
-        #     mongo.db.cafes.find({"published_by": session_username}))
-        print(f"Is Admin: {is_admin()}")       
-        if is_admin():
+            {"username": session_username})      
+        if "admin" in session and session["admin"]:
+            # retrieves all cafes for admin users
             cafes = list(mongo.db.cafes.find())
+            print("Admin user")
         else:
+            # retrieves on user published cafes for non-admin users
             cafes = list(mongo.db.cafes.find({"published_by": session_username}))
-
+        
         # retrieve image data for countries
         countries = list(mongo.db.countries.find())
 
