@@ -54,7 +54,7 @@
                         <!-- Edit / Delete Buttons -->
                         <div class="card-buttons waves-effect waves-block waves-light">
                             <a class="activator btn-floating halfway-fab waves-effect waves-light red lighten-2 right"><i class="fas fa-chevron-up"></i></a>
-                            {% if session.user|lower == cafe.published_by|lower %}
+                            {% if session.user|lower == cafe.published_by|lower or session.user|lower == "admin" %}
                             <a href="{{ url_for('edit_cafe', cafe_id=cafe._id) }}" class="waves-effect waves-light btn-small left">Edit</a>
                             <!-- Delete Modal Trigger -->
                             <a href="#modal{{cafe._id}}" class="modal-trigger waves-effect waves-light btn-small red lighten-3 left">Delete</a>

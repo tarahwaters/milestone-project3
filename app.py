@@ -197,7 +197,7 @@ def add_cafe():
 def edit_cafe(cafe_id):
     if request.method == "POST":
         current_date = datetime.now().strftime("%d/%m/%Y")
-        if is_admin() or (
+        if "admin" in session and session["admin"] or (
             session["user"] == mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})['published_by']):
             # Edits the cafe for admin user or published owner of the cafe
             mongo.db.cafes.update_one(
@@ -248,7 +248,7 @@ def edit_cafe(cafe_id):
 
 @app.route("/delete_cafe/<cafe_id>")
 def delete_cafe(cafe_id):
-    if is_admin() or (
+    if "admin" in session and session["admin"] or (
             session["user"] == mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})['published_by']):
         # Deletes the cafe for admin user or cafe owner
         mongo.db.cafes.delete_one({"_id": ObjectId(cafe_id)})
@@ -265,7 +265,7 @@ def delete_cafe(cafe_id):
 @app.route("/delete_user_cafe/<cafe_id>")
 def delete_user_cafe(cafe_id):
     cafe = mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})
-    if is_admin() or (
+    if "admin" in session and session["admin"] or (
             session["user"] == mongo.db.cafes.find_one({"_id": ObjectId(cafe_id)})['published_by']):
         # Deletes the cafe for admin user or cafe owner via the profile page
         mongo.db.cafes.delete_one({"_id": ObjectId(cafe_id)})
