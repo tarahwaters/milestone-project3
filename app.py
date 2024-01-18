@@ -141,7 +141,7 @@ def profile(username):
             # retrieves all cafes for admin users
             cafes = list(mongo.db.cafes.find())
         else:
-            # retrieves on user published cafes for non-admin users
+            # retrieves only user published cafes for non-admin users
             cafes = list(mongo.db.cafes.find({"published_by": session_username}))
         
         # retrieve image data for countries
