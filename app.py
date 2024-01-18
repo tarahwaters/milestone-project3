@@ -131,18 +131,19 @@ def signin():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 @signin_required
-def profile(username):  
-    if session["user"]:
-        # retrieve the session user's username from database
+def profile(username):
+    if "user" in session:
         session_username = session["user"]
-        user = mongo.db.users.find_one(
-            {"username": session_username})      
-        if "admin" in session and session["admin"]:
-            # retrieves all cafes for admin users
-            cafes = list(mongo.db.cafes.find())
-        else:
-            # retrieves only user published cafes for non-admin users
-            cafes = list(mongo.db.cafes.find({"published_by": session_username}))
+        # retrieve the session user's username from database
+        if session_username:
+        # user = mongo.db.users.find_one(
+        #     {"username": session_username})      
+            if session_username == "admin":
+                # retrieves all cafes for admin users
+                cafes = list(mongo.db.cafes.find())
+            else:
+                # retrieves only user published cafes for non-admin users
+                cafes = list(mongo.db.cafes.find({"published_by": session_username}))
         
         # retrieve image data for countries
         countries = list(mongo.db.countries.find())
