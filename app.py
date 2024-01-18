@@ -135,9 +135,7 @@ def profile(username):
     if "user" in session:
         session_username = session["user"]
         # retrieve the session user's username from database
-        if session_username:
-        # user = mongo.db.users.find_one(
-        #     {"username": session_username})      
+        if session_username:     
             if session_username == "admin":
                 # retrieves all cafes for admin users
                 cafes = list(mongo.db.cafes.find())
