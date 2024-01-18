@@ -271,6 +271,9 @@ For help with **delete confirmation modals**:
 - [Materialize](https://materializecss.com/modals.html#!) - Modal documentation with trigger button (plus js initialization)
 - [Dynjashik's MSP3-Movie-collection app](https://github.com/Dynjashik/MSP3-Movie-collection/blob/master/templates/movie.html) - submitted for Code Institute MS3 project ([live link to project](http://my-milestone-project3.herokuapp.com/home)) used as a working reference for the Materialize code
 
+For help with python to **control the visibility of cafes and edit/delete functionality for admin users vs non-admin users**:
+- [Perplexity.AI](https://www.perplexity.ai/) and Code Insititute tutor support
+
 For help with...:
 - [Link description](#)
 - [Link description](#)
