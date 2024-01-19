@@ -357,11 +357,6 @@ def validate_cafe(cafe):
         is_valid = False
         error_msg.append("Google Map link must be specified")
     
-    # validate cafe description
-    if len(cafe["cafe_description"] < 10):
-        is_valid = False
-        error_msg.append("Cafe description must be between 10 and 250 characters long")
-    
     #validate power outlets
     if not cafe["power_outlets"]:
         is_valid = False
