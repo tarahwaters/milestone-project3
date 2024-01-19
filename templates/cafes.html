@@ -12,6 +12,7 @@
         <div class="row">
             <a href="{{ url_for('add_cafe') }}" class="btn-large">ADD CAFE</a>
         </div>
+        <!-- Search Cafes -->
         <div class="row">
             <form action="{{ url_for('search') }}" method="POST" class="col s12">
                 <div class="row valign-wrapper center-align">
@@ -21,10 +22,10 @@
                         <label for="query">Search Cafes</label>
                     </div>
                     <div class="col s12 m4">
-                        <a href="{{ url_for('get_cafes') }}" class="btn-small red lighten-2">
+                        <a href="{{ url_for('get_cafes') }}" class="btn-small search-btn red lighten-2">
                             <i class="fas fa-undo"></i> Reset</a>
-                        <button type="submit" class="btn-small">
-                            <i class="fas fa-search left"></i>Search
+                        <button type="submit" class="btn-small search-btn">
+                            <i class="fas fa-search"></i> Search
                         </button>
                     </div>
                 </div>

@@ -125,6 +125,16 @@ nav ul a {
     font-weight: 500;
 }
 
+.search-btn {
+    width: 10rem;
+    font-size: 1rem;
+    text-align:center
+}
+
+.fa-search::before, 
+.fa-undo:before {
+    font-size: 1.5rem;
+}
 .card .card-content {
     padding: 10px 24px 24px 10px;
     border-radius: 0 0 2px 2px;
@@ -167,3 +177,13 @@ nav ul a {
 .select-wrapper+label {
     top: -32px;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .search-btn {
+        width: 4rem;
+        font-size: 0rem;
+        text-align:center
+    }
+    
+    }
