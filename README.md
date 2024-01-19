@@ -277,6 +277,9 @@ For help with python to **control the visibility of cafes and edit/delete functi
 For help with **styling the cafe form box drop-shadow**:
 - [Josh W Comeau](https://www.joshwcomeau.com/css/designing-shadows/) - adapted CSS code from tutorial
 
+For help with **validation error messages for 'add cafe' form inputs**
+- [Dynjashik's MSP3-Movie-collection app](https://github.com/Dynjashik/MSP3-Movie-collection/blob/master/app.py) - submitted for Code Institute MS3 project, validation logic adapted for use
+
 
 ## References 
 
