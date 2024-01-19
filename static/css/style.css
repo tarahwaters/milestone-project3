@@ -100,7 +100,7 @@ nav ul a {
     margin: 0 0.6rem 0 0;
 }
 
-/* All Cafes Page */
+/* Main Cafes Page */
 
 .btn-floating.halfway-fab {
     position: relative;
@@ -132,4 +132,21 @@ nav ul a {
 
 .card-buttons {
     padding-top: 0.5rem;
+}
+
+/* Add Cafe */
+
+.cafe-form {
+    background-color: white;
+    border-radius: 1%;
+    margin-bottom: 2rem;
+    padding: 0 2rem !important;
+}
+
+.top-form {
+    padding-top: 1rem;
+}
+
+.bottom-form {
+    padding-bottom: 1rem;
 }
