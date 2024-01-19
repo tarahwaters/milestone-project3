@@ -274,10 +274,8 @@ For help with **delete confirmation modals**:
 For help with python to **control the visibility of cafes and edit/delete functionality for admin users vs non-admin users**:
 - [Perplexity.AI](https://www.perplexity.ai/) and Code Insititute tutor support
 
-For help with...:
-- [Link description](#)
-- [Link description](#)
-- [Link description](#)
+For help with **styling the cafe form box drop-shadow**:
+- [Josh W Comeau](https://www.joshwcomeau.com/css/designing-shadows/) - adapted CSS code from tutorial
 
 
 ## References 
