@@ -178,9 +178,16 @@ def add_cafe():
             "published_by": session["user"],
             "published_on": current_date,
         }
-        mongo.db.cafes.insert_one(cafe)
-        flash("Cafe Added Successfully!")
-        return redirect(url_for("get_cafes"))
+        cafe_is_valid, error_msg = validate_cafe(cafe)
+
+        if cafe_is_valid:
+            mongo.db.cafes.insert_one(cafe)
+            flash("Cafe Added Successfully!")
+            return redirect(url_for("get_cafes"))
+        else:
+            flash(error_msg)
+            return redirect(url_for("add_cafe"))
+
 
     countries = mongo.db.countries.find().sort("country_name", 1)
     power_options = mongo.db.power_options.find().sort("power_outlets", 1)
@@ -324,6 +331,54 @@ def delete_country(country_id):
     mongo.db.countries.delete_one({"_id": ObjectId(country_id)})
     flash("Country Successfully Deleted")
     return redirect(url_for("get_countries"))
+
+# Credit for code adapted from http://my-milestone-project3.herokuapp.com/, 
+# more specifically https://github.com/Dynjashik/MSP3-Movie-collection/blob/master/app.py
+def validate_cafe(cafe):
+    is_valid = True
+    error_msg = []
+    # validate cafe name
+    if len(cafe["cafe_name"]) < 1:
+        is_valid = False
+        error_msg.append("Cafe name should be at least 1 character long")
+    
+    # validate town / city name
+    if len(cafe["city_name"]) < 1:
+        is_valid = False
+        error_msg.append("Town / city name should be at least 1 character long")
+    
+    #validate country selection
+    if not cafe["country_name"]:
+        is_valid = False
+        error_msg.append("Country is not selected")
+    
+    # validate google map link
+    if not cafe["map_link"]:
+        is_valid = False
+        error_msg.append("Google Map link must be specified")
+    
+    # validate cafe description
+    if len(cafe["cafe_description"] < 10):
+        is_valid = False
+        error_msg.append("Cafe description must be between 10 and 250 characters long")
+    
+    #validate power outlets
+    if not cafe["power_outlets"]:
+        is_valid = False
+        error_msg.append("Option is not selected")
+    
+    #validate free wifi
+    if not cafe["free_wifi"]:
+        is_valid = False
+        error_msg.append("Option is not selected")
+    
+    #validate wifi speed
+    if not cafe["wifi_speed"]:
+        is_valid = False
+        error_msg.append("Option is not selected")
+    
+    return is_valid, error_msg
+    
 
 
 if __name__ == "__main__":
