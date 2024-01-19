@@ -14,14 +14,14 @@
                 <!-- Cafe Name -->
                 <div class="row top-form">
                     <div class="input-field col s12">
-                        <input id="cafe_name" name="cafe_name" type="text" class="validate" required>
+                        <input id="cafe_name" name="cafe_name" minlength="1" type="text" class="validate" required>
                         <label for="cafe_name">Cafe Name</label>
                     </div>
                 </div>
                 <div class="row">
                     <!-- Town / City Name -->
                     <div class="input-field col s12 m6">
-                        <input id="city_name" name="city_name" type="text" class="validate" required>
+                        <input id="city_name" name="city_name" type="text" minlength="1" class="validate" required>
                         <label for="city_name">Town / City Name</label>
                     </div>
                     <!-- Country Selection -->
@@ -36,18 +36,18 @@
                     </div>
                 </div>
                 <div class="row">
-                    <!-- Google Maps Link -->
+                    <!-- Google Maps URL -->
                     <div class="col s12">
                         <div class="input-field">
-                            <input id="map_link" name="map_link" placeholder="If no link available please type N/A" type="text" class="validate" required>
-                            <label for="map_link">Google Maps link</label>
+                            <input id="map_link" name="map_link" placeholder="Paste the Google Map URL here" type="url" class="validate" required>
+                            <label for="map_link">Google Maps URL</label>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <!-- Cafe Description -->
                     <div class="input-field col s12">
-                        <textarea id="cafe_description" name="cafe_description" placeholder="Tell us a little bit about the cafe.." class="materialize-textarea validate" data-length="250" required></textarea>
+                        <textarea id="cafe_description" name="cafe_description" placeholder="Tell us a little bit about the cafe.." class="materialize-textarea validate" minlength="10" data-length="250" required></textarea>
                         <label for="cafe_description">Cafe Description</label>
                     </div>
                 </div>
