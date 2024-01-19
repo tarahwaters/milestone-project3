@@ -187,3 +187,14 @@ nav ul a {
 }
 
 }
+
+@media screen and (min-width: 993px) and (max-width: 1111px) {
+
+.row .col.m6 {
+    width: 50%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+    
+}
