@@ -9,6 +9,7 @@ $(document).ready(function(){
     $('.modal').modal();
     $(".flash-modal").modal();
     $(".flash-modal").modal("open");
+    $(".dropdown-trigger").dropdown();
     /*
         Custom validation for Materialize Select Options for form 
         - from Code Institute TaskManager Walkthrough Tutorial

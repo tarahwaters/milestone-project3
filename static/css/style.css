@@ -69,6 +69,22 @@ nav ul a {
     color: #BC8B8A !important;
 }
 
+.dropdown-trigger {
+    cursor: pointer;
+    padding-bottom: 0.25rem;
+    clear: both;
+    min-height: 50px;
+    line-height: 1.5rem;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    top: -0.25rem;
+}
+
+.fa-caret-down:before {
+    padding-left: 1rem;
+}
+
 /* Register Page */
 
 .flash-messages h4 {
