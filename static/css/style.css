@@ -151,9 +151,18 @@ nav ul a {
 .fa-undo:before {
     font-size: 1.5rem;
 }
+
+.card .card-title {
+    font-size: 1.4rem;
+}
+
 .card .card-content {
     padding: 10px 24px 24px 10px;
     border-radius: 0 0 2px 2px;
+}
+
+.card .card-content p {
+    font-size: 0.8rem;
 }
 
 .card-buttons {
