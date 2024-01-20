@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
+/* General Styles */
+
 body {
     background-color: #F1EFE7;
     font-family: 'Libre Baskeville';
@@ -83,37 +85,6 @@ nav ul a {
 
 .fa-caret-down:before {
     padding-left: 1rem;
-}
-
-/* Register Page */
-
-.flash-messages h4 {
-    line-height: 2;
-}
-
-/* Footer */
-
-.page-footer {
-    background-color: #BC8B8A !important;
-}
-
-.footer-copyright {
-    font-family: 'League Spartan';
-    font-weight: 500;
-}
-
-.footer-content h5, .footer-content p {
-    text-align: right;
-}
-
-.social-links {
-    margin: 0 auto;
-    max-width: 1280px;
-    width: 90%;
-}
-
-.social-links a {
-    margin: 0 0.6rem 0 0;
 }
 
 /* Main Cafes Page */
@@ -201,6 +172,37 @@ nav ul a {
 
 .select-wrapper+label {
     top: -32px;
+}
+
+/* Register Page */
+
+.flash-messages h4 {
+    line-height: 2;
+}
+
+/* Footer */
+
+.page-footer {
+    background-color: #BC8B8A !important;
+}
+
+.footer-copyright {
+    font-family: 'League Spartan';
+    font-weight: 500;
+}
+
+.footer-content h5, .footer-content p {
+    text-align: right;
+}
+
+.social-links {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+.social-links a {
+    margin: 0 0.6rem 0 0;
 }
 
 @media only screen and (max-width: 600px) {
