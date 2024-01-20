@@ -46,10 +46,10 @@
                         <div class="card-image waves-effect waves-block waves-light">
                             {% for country in countries %}
                                 {% if cafe.country_name == country.country_name %}
-                                    <img class="activator" src="/static/images/{{ country.image_name }}">
+                                    <img class="activator" src="/static/images/{{ country.image_name }}" alt="{{ country.image_name }}">
                                 {% endif %}
                             {% else %}
-                                <img class="activator" src="https://materializecss.com/images/sample-1.jpg">
+                                <img class="activator" src="https://materializecss.com/images/sample-1.jpg" alt="Sample image of a serene lake view, country image pending">
                             {% endfor %}
                         </div>
                         <!-- Edit / Delete Buttons -->
