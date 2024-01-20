@@ -36,7 +36,7 @@
       <!-- top navbar from materialize (https://materializecss.com/navbar.html) -->
       <nav class="brown lighten-5">
           <div class="nav-wrapper">
-            <a href="{{ url_for('get_cafes') }}" class="brand-logo center">cafeworks.<img class="cafeworks-beans" src="/static/favicon/favicon.ico"></a>
+            <a href="{{ url_for('get_cafes') }}" class="brand-logo center">cafeworks.<img class="cafeworks-beans" src="/static/favicon/favicon.ico" alt="Coffee beans logo"></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
             <ul class="menu-links right hide-on-med-and-down">
               <li><a href="{{ url_for('get_cafes') }}">Home</a></li>
@@ -48,7 +48,7 @@
 
       <!-- mobile sidenav from materialize (https://materializecss.com/navbar.html) -->        
         <ul class="sidenav brown lighten-5" id="mobile-demo">
-          <li><h4 class="brand-logo center-align">cafeworks.<img class="cafeworks-beans" src="/static/favicon/favicon.ico"></h4></li>
+          <li><h4 class="brand-logo center-align">cafeworks.<img class="cafeworks-beans" src="/static/favicon/favicon.ico" alt="Coffee beans logo"></h4></li>
           <li><a href="{{ url_for('get_cafes') }}">Home</a></li>
           {% if session.user %}
               <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
