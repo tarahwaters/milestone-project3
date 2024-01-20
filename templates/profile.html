@@ -1,19 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
 
-<main class="container">
-    <!-- Profile Username -->
-    <div class="row">
-        <div class="col s12 m8 offset-m2">
-            <div class="card-panel">
-                <h3 class="center-align brown-text text-darken-4">
-                    {{ username }}'s Profile
-                </h3>
+<main>
+    <div class="container center-align">
+        <!-- Profile Username -->
+        <div class="row">
+            <div class="col s12 m8 offset-m2">
+                <div class="card-panel">
+                    <h3 class="center-align brown-text text-darken-4">
+                        {{ username }}'s Profile
+                    </h3>
+                </div>
             </div>
-        </div>
+        </div>        
+        <h4 class="center-align">My Cafes</h4>
     </div>
-
-    <h4 class="center-align">My Cafes</h4>
+    
     {% if cafes|length > 0 %}
     <!-- My Cafe Cards -->
     <div class="container">
@@ -79,9 +81,13 @@
           </div>
     </div>
     {% else %}
+    <div class="row center-align">
         <h2 class="red-text text-darken-2 center-align">No Cafes Added</h2>
+        <p>Know a good remote work / study cafe that you'd like to share with others?</p>
+        <div class="row center-align">
+            <a href="{{ url_for('add_cafe') }}" class="btn-large">ADD CAFE</a>
+        </div>
+    </div>
     {% endif %}
-
-
 </main>
 {% endblock %}
