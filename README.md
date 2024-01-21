@@ -190,6 +190,30 @@ Returning users will see a list of 'My Cafes' that they have published on this '
 
 - The 'ADD CAFE' button can also be accessed via the Profile page (if no cafes have been added yet, see [Registration Success](#registration-success---welcome-message-and-redirection-to-profile-page))
 
+#### Add Cafe Form
+
+- Add Cafe form consists of a mix of text-input fields and select options to generate and information card for the cafe. Each input is required for the form to be submitted.
+
+![Add Cafe Form](/documentation/readme/features/add-cafe-form.jpg)
+
+- The 'Country Name' select option consists of a dropdown list with associated country image (already saved as static images, but the Admin user can adjust the image filename from the front-end if necessary).
+
+![Country Name Select dropdown list](/documentation/readme/features/country-name-select-options.jpg)
+
+There are other form-select options for the user to complete, e.g. for Power Outlets Available? / Free Wifi? / Wifi Speed: 
+
+![Form Select Options (example)](/documentation/readme/features/form-select-options.jpg)
+
+#### Add Cafe Form Validation
+
+- Before the form data can be submitted and saved to the database, the user must meet the validation requirements. If the user has not completed the 'Cafe Name' input field, for example, then the form will display an error message:
+
+![Add Cafe Form Validation](/documentation/readme/features/form-input-validation.jpg)
+
+- Each input field is required before the 'ADD CAFE' button will confirm that the data has been saved and added to the page:
+
+![Add Cafe Success Message](/documentation/readme/features/add-cafe-success.jpg)
+
 
 ### Future Features
 
