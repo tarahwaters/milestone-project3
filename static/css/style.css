@@ -144,6 +144,11 @@ nav ul a {
     padding-top: 0.5rem;
 }
 
+.card .card-image {
+    position: relative;
+    z-index: 0;
+}
+
 /* Add Cafe */
 
 .cafe-form {
