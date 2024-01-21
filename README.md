@@ -250,7 +250,17 @@ There are other form-select options for the user to complete, e.g. for Power Out
 
 ![Edit Cafe prefilled form](/documentation/readme/features/edit-cafe-prefilled-data.jpg)
 
+#### Delete Cafe confirmation
 
+- When the 'DELETE' button is clicked on any post, this feature checks to see if the user is sure about deleting the cafe. A modal will pop up on screen with a YES / NO button to answer, "Are you sure you want to delete this cafe?" (typo has since been fixed).
+
+![Delete Cafe confirmation](/documentation/readme/features/delete-confirmation-modal.jpg)
+
+- If the user chooses YES, then the cafe will be deleted from the database, and the user is returned to either their Profile or the homepage (depending on where the delete button was accessed). A message will also be displayed to confirm that the deletion was succcessful:
+
+![Delete Successful message](/documentation/readme/features/delete-success-message.jpg)
+
+- If the user chooses NO, they will return to the list of cafes without deletion.
 
 
 ### Future Features
