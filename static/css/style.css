@@ -209,7 +209,7 @@ nav ul a {
     margin: 0 0.6rem 0 0;
 }
 
-@media only screen and (max-width: 347px) {
+@media only screen and (max-width: 360px) {
 
 .valign-wrapper {
     flex-wrap: wrap;
