@@ -97,9 +97,10 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 | Confirmation of delete action via a pop up modal                    |     5      |            4            |    Y    |
 | Restricted access for admin user to manage countries and images     |     5      |            5            |    Y    |
 | Add / edit functionality for countries and images                   |     5      |            5            |    Y    |
+| Custom Error404 page                                                |     3      |            3            |    N    |
 | Option to view an individual cafe on a separate page                |     3      |            3            |    N    |
-| Option to upload a country image along with the country name [X]    |     2      |            2            |    X    |
 | Option to delete user account and associated posts [X]              |     4      |            3            |    X    |
+| Option to upload a country image along with the country name [X]    |     2      |            2            |    X    |
 
 ---
 
