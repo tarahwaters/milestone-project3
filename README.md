@@ -63,6 +63,14 @@ As a user I would like:
 - to have each link, button and action on the website work as expected
 - to have an enjoyable experience while engaging with the platform
 
+#### Admin user / Site owner
+In addition to the general user expectations, as an admin user / site owner I would like:
+- to be able to access all cafe posts from the Admin profile page
+- to to able to delete cafe posts by any user, not just those published by myself
+- to be able to add / edit / delete countries from the available list of locations
+- to be able to upload a country image that is successfully displayed in both the form select option and the appropriate cafe post
+- to restrict access to Admin user pages such as 'Manage Locations' securely so that non-admin users can only interact with their own posts
+
 ---
 
 ## Scope
