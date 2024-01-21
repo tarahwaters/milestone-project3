@@ -282,6 +282,16 @@ There are other form-select options for the user to complete, e.g. for Power Out
 
 ![Add Country success message](/documentation/readme/features/country-added-success.jpg)
 
+#### Edit Country feature
+
+- Admin users can also Edit each country that is in the database category of 'Countries'. This consists of the same form as 'Add Country' but with the presaved data that can be edited and saved.
+
+- By clicked the 'EDIT' button, this confirms the changes, while the 'CANCEL' option will return the user back to the Manage Locations page.
+
+- The helper text for the 'Image Name' helps to remind the admin user of the format which has been used so far for the saved static country images.
+
+![Edit Country form](/documentation/readme/features/edit-country-feature.jpg)
+
 
 ### Future Features
 
