@@ -1,11 +1,11 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# cafeworks ☕
+# Cafeworks ☕
 # - a full stack web application to share cafe recommendations suitable for remote working
 
 ------
 
-**cafeworks** is a web application that allows user to view and recommend their favourite cafes that are suitable for remote working.
+**Cafeworks** is a web application that allows user to view and recommend their favourite cafes that are suitable for remote working.
 
 It can often be difficult to find the right cafe which offers us everything we need for working / studying remotely - e.g. a free and reliable wifi connection, power outlets for charging laptops and devices, comfortable seating, and good quality food and drink options for refueling are also important!
 
@@ -13,11 +13,11 @@ This app aims to provide a platform where users can share their favourite remote
 
 ## Showcase
 
-![Am I Responsive?](# "Am I Responsive? Website Mockup")
+![Am I Responsive?](/documentation/readme/cafeworks-amiresponsive.jpg "Am I Responsive? Website Mockup")
 
-The **Am I Responsive?** link can be found here - [Am I Responsive?](#)
+The **Am I Responsive?** link can be found here - [Am I Responsive?](https://ui.dev/amiresponsive?url=https://cafeworks-5f88ec79e78c.herokuapp.com/)
 
-A **deployed link** to the live website can be found here [Website Name](#)
+A **deployed link** to the live website can be found here [Cafeworks Live Website](https://cafeworks-5f88ec79e78c.herokuapp.com/)
 
 ---
 
