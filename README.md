@@ -242,6 +242,14 @@ There are other form-select options for the user to complete, e.g. for Power Out
 
 - When clicked, these buttons will redirect to either the Edit Cafe form for the cafe, or a delete confirmation modal.
 
+#### Edit Cafe (prefilled form)
+
+- Once the Edit button has been clicked, a prefilled form will open with the data that was previously saved to the cafe card. This can be edited by the user and re-submitted by clicking the 'EDIT CAFE' button at the bottom to confirm the changes.
+
+- Otherwise if the user wishes to cancel the changes, they can click the 'CANCEL' button to be redirected back to the main homepage (without any changes saved).
+
+![Edit Cafe prefilled form](/documentation/readme/features/edit-cafe-prefilled-data.jpg)
+
 
 
 
