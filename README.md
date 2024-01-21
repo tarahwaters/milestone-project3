@@ -236,7 +236,7 @@ There are other form-select options for the user to complete, e.g. for Power Out
 
 ![Edit / Delete buttons](/documentation/readme/features/cafe-card-buttons.jpg)
 
-- The edit / delete cafe buttons on the cafe cards will be visible for the user who published the cafe only (unless the user has admin privileges), either on the homepage or in the 'My Cafes' list of the user's Profile:
+- The edit / delete cafe buttons on the cafe cards will be visible only for the user who published the cafe (unless the user has admin privileges), either on the homepage or in the 'My Cafes' list of the user's Profile:
 
 ![User's Profile Page (e.g. admin)](/documentation/readme/features/profile-page-example.jpg)
 
