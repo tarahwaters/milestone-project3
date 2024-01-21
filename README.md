@@ -292,6 +292,16 @@ There are other form-select options for the user to complete, e.g. for Power Out
 
 ![Edit Country form](/documentation/readme/features/edit-country-feature.jpg)
 
+#### Delete Country feature
+
+- Similar to when deleting a cafe post, the 'DELETE' button on the country cards can be clicked to first confirm a deletion (typo has been fixed):
+
+![Delete Country confirmation message](/documentation/readme/features/country-delete-confirmation.jpg)
+
+- When YES is clicked, a success message will be displayed. Otherwise, NO cancels the action and returns the user to the Manage Locations page.
+
+![Delete Country success message](/documentation/readme/features/country-deleted-success.jpg)
+
 
 ### Future Features
 
