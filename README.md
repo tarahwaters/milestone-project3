@@ -166,11 +166,11 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 
 #### Registration Success - Welcome message and redirection to profile page
     
-- Upon a successful registration (ie. the new username and password has been accepted and saved to the database), the user is redirected to their new Profile page with a Welcome message displayed:
+- Upon a successful registration (ie. the new username and password has been accepted and saved to the database), the user is redirected to their new Profile page with a 'Registration Successful!' message displayed:
 
 ![Successful registration and welcome message](/documentation/readme/features/registration-successful.jpg)
 
-Returning users will see a list of 'My Cafes' that they have published on this 'Profile' page. But as a new user with no cafes added yet, this information is displayed as a message on the profile along with a button to 'Add Cafe'.
+Returning users will see a list of 'My Cafes' that they have published on this Profile page. But as a new user with no cafes added yet, this information is displayed as a message on the profile along with a button to 'Add Cafe'.
 
 #### Signout Confirmation
 
@@ -192,11 +192,11 @@ Returning users will see a list of 'My Cafes' that they have published on this '
 
 #### Add Cafe Form
 
-- Add Cafe form consists of a mix of text-input fields and select options to generate and information card for the cafe. Each input is required for the form to be submitted.
+- The Add Cafe form consists of a mix of text-input fields and select options to generate an information card for the cafe. Each input is required for the form to be submitted.
 
 ![Add Cafe Form](/documentation/readme/features/add-cafe-form.jpg)
 
-- The 'Country Name' select option consists of a dropdown list with associated country image (already saved as static images, but the Admin user can adjust the image filename from the front-end if necessary).
+- The 'Country Name' select option consists of a dropdown list with associated country images (already saved as static images, but the Admin user can adjust the image filename from the front-end if necessary).
 
 ![Country Name Select dropdown list](/documentation/readme/features/country-name-select-options.jpg)
 
@@ -206,7 +206,7 @@ There are other form-select options for the user to complete, e.g. for Power Out
 
 #### Add Cafe Form Validation
 
-- Before the form data can be submitted and saved to the database, the user must meet the validation requirements. If the user has not completed the 'Cafe Name' input field, for example, then the form will display an error message:
+- Before the form data can be submitted and saved to the database, the user must meet the validation requirements. For example, if the user has not completed the 'Cafe Name' input field (or any other field), then the form will display an error message:
 
 ![Add Cafe Form Validation](/documentation/readme/features/form-input-validation.jpg)
 
@@ -216,19 +216,21 @@ There are other form-select options for the user to complete, e.g. for Power Out
 
 #### Cafe Cards on Homepage and Profile
 
-- Once a cafe has been added successfully by the user, the information will be displayed in a Cafe Card on the homepage, and the user's Profile page (for non-admin users, only cafes published by the signed in user will be visibile on the Profile). 
+- Once a cafe has been added successfully by the user, the information will be displayed in a Cafe Card on the homepage, and the user's Profile page (for non-admin users, only cafes published by the signed in user will be visible on the Profile). 
 
 - The image cards adapted from [Materialize](https://materializecss.com/cards.html), are interactive and expandable. In their inactive state they display the country image, cafe name, country and city name:
 
 ![Inactive Cafe Cards](/documentation/readme/features/cafe-card.jpg)
 
-- The edit / delete buttons are also visible on the inactive cafe cards that were published by the user (or all cafe cards for the admin user). See [Edit / Delete buttons](#) for more details of this feature.
+- The edit / delete buttons are also visible on inactive cafe cards that were published by the user (or all cafe cards for the admin user). See [Edit / Delete buttons](#) for more details of this feature.
 
-- When either the card title (cafe name) / chevron icon / country image is clicked on, the card expands to show the full card of information saved from the cafe form (i.e. Cafe Name / City Name / Country Name etc..):
+- When either the card title (cafe name) / chevron icon / country image are clicked on, the card expands to show the full card of information saved from the cafe form (i.e. Cafe Name / City Name / Country Name etc..):
 
 ![Expanded Cafe Card](/documentation/readme/features/cafe-card-expanded.jpg)
 
-- The card can then be closed to the basic info and image view by either clicking on the X icon or the cafe title.
+- The 'Google Map Link' will open in a separate tab if the URL is working.
+
+- The card can be closed to view the basic info and image view again by either clicking on the X icon or the cafe title.
 
 
 ### Future Features
