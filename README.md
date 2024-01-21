@@ -108,6 +108,28 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 
 ### Existing Features
 
+Quick Links:
+
+  - [Logo Link to Homepage](#logo-link-to-homepage)
+  - [Desktop Navbar Dropdown](#desktop-navbar-dropdown)
+  - [Mobile Navbar Menu](#mobile-navbar-menu)
+  - [Signin Form with input validation](#signin-form-with-input-validation)
+  - [Registration form with input validation](#registration-form-with-input-validation)
+  - [Registration Success](#registration-success---welcome-message-and-redirection-to-profile-page)
+  - [Signout Confirmation](#signout-confirmation)
+  - [Add Cafe button](#add-cafe-button)
+  - [Add Cafe form](#add-cafe-form)
+  - [Add Cafe form validation](#add-cafe-form-validation)
+  - [Cafe Cards](#cafe-cards-on-homepage-and-profile)
+  - [Edit / Delete cafe buttons](#edit--delete-cafe-buttons)
+  - [Edit Cafe (prefilled form)](#edit-cafe-prefilled-form)
+  - [Delete Cafe confirmation](#delete-cafe-confirmation)
+  - [Manage Locations (admin only functionality)](#manage-locations-page-admin-only-functionality)
+  - [Add Country feature](#add-country-feature)
+  - [Edit Country feature](#edit-country-feature)
+  - [Delete Country feature](#delete-country-feature)
+  - [Search Bar feature](#search-bar-feature)
+
 #### Logo link to Homepage
 
 - By clicking the logo on page, the user is redirected back to the Homepage. 
@@ -315,6 +337,12 @@ There are other form-select options for the user to complete, e.g. for Power Out
 - If no results are found, then a message will confirm this by saying 'No Result Found':
 
 ![Search No Results example](/documentation/readme/features/search-no-result.jpg)
+
+#### Footer Social Links
+
+- The footer contains links to my LinkedIn and Github profiles (Tarah Waters):
+
+![Footer links](/documentation/readme/features/footer-with-social-links.jpg)
 
 
 ### Future Features
