@@ -262,6 +262,26 @@ There are other form-select options for the user to complete, e.g. for Power Out
 
 - If the user chooses NO, they will return to the list of cafes without deletion.
 
+#### Manage Locations page (admin only functionality)
+
+- The Manage Locations page is only accessible by the signed in 'admin' user (currently only 1 user's login credentials are defined as admin). This page consists of country category cards with an image and name visible. The countries listed are those that are available to be selected from the Cafe form.
+
+![Manage Locations page](/documentation/readme/features/admin-manage-locations-page.jpg)
+
+- There is a button called 'ADD COUNTRY' where the admin is redirected to a form that will add a country name, and image filename to the countries list in the database.
+
+#### Add Country feature
+
+![ADD COUNTRY button](/documentation/readme/features/add-country-button.jpg)
+
+- Currently there is no dyanamic option to upload a country image via the front-end, but once an image is saved as a static file in the repository, there is the option to change the filename location so that the appropriate image is displayed (both need to match).
+
+![Add Country form](/documentation/readme/features/add-country-form.jpg)
+
+- Confirming the changes via the 'ADD COUNTRY' button will redirect to the Manage Locations page with a success message:
+
+![Add Country success message](/documentation/readme/features/country-added-success.jpg)
+
 
 ### Future Features
 
