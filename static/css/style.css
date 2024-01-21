@@ -209,6 +209,14 @@ nav ul a {
     margin: 0 0.6rem 0 0;
 }
 
+@media only screen and (max-width: 347px) {
+
+.valign-wrapper {
+    flex-wrap: wrap;
+}
+    
+}
+
 @media only screen and (max-width: 600px) {
 
 .search-btn {
