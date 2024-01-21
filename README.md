@@ -214,6 +214,22 @@ There are other form-select options for the user to complete, e.g. for Power Out
 
 ![Add Cafe Success Message](/documentation/readme/features/add-cafe-success.jpg)
 
+#### Cafe Cards on Homepage and Profile
+
+- Once a cafe has been added successfully by the user, the information will be displayed in a Cafe Card on the homepage, and the user's Profile page (for non-admin users, only cafes published by the signed in user will be visibile on the Profile). 
+
+- The image cards adapted from [Materialize](https://materializecss.com/cards.html), are interactive and expandable. In their inactive state they display the country image, cafe name, country and city name:
+
+![Inactive Cafe Cards](/documentation/readme/features/cafe-card.jpg)
+
+- The edit / delete buttons are also visible on the inactive cafe cards that were published by the user (or all cafe cards for the admin user). See [Edit / Delete buttons](#) for more details of this feature.
+
+- When either the card title (cafe name) / chevron icon / country image is clicked on, the card expands to show the full card of information saved from the cafe form (i.e. Cafe Name / City Name / Country Name etc..):
+
+![Expanded Cafe Card](/documentation/readme/features/cafe-card-expanded.jpg)
+
+- The card can then be closed to the basic info and image view by either clicking on the X icon or the cafe title.
+
 
 ### Future Features
 
