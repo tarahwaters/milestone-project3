@@ -172,6 +172,14 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 
     Returning users will see a list of 'My Cafes' that they have published on this 'Profile' page. But as a new user with no cafes added yet, this information is displayed as a message on the profile along with a button to 'Add Cafe'.
 
+- **Signout Confirmation**
+
+    - Users wishing to signout from their account can click the 'Signout' link in the navbar menu at anytime. The user will then receive confirmation that they are no longer signed in, and they will no longer be able to access their Profile until they sign back in.
+
+    ![Confirmation of Signout](/documentation/readme/features/signout-confirmation.jpg)
+
+
+
 
 
 - **Feature 3**
