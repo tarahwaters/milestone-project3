@@ -81,16 +81,25 @@ Considering the user requirements and expectations, the table below shows the fe
 [X] indicates opportunities that were considered at the planning stage but were deemed not viable/feasible for this project sprint.
 Y / N indicates a Yes / No as to whether each opportunity was acheived and implemented at this stage.
 
-| Opportunity                                                      | Importance | Viability / Feasibility | Outcome |
-| ---------------------------------------------------------------- | :--------: | :---------------------: | :------:|
-| Card-matching memory game that works by user clicking cards      |     5      |            5            |    Y    |
-| Timer and move counter that provide up-to-date feedback to user  |     5      |            5            |    Y    |
-| HowToPlay modal with set of instructions (with clickable button) |     5      |            5            |    Y    |
-| WinMessage modal that pops up when user has completed the game   |     5      |            5            |    Y    |
-| Option to restart (with button on main page, also via Win modal) |     5      |            5            |    Y    |
-| Access to summary notes page for revision / download afer game   |     3      |            4            |    Y    |
-| Option of advanced level / challenge                             |     3      |            2            |    N    |
-| Option to adjust audio settings [X]                              |     3      |            2            |    X    |
+| Opportunity                                                         | Importance | Viability / Feasibility | Outcome |
+| ------------------------------------------------------------------- | :--------: | :---------------------: | :------:|
+| Register a secure account by creating a signin username + password  |     5      |            5            |    Y    |
+| Signin page for registered users                                    |     5      |            5            |    Y    |
+| Signout option with confirmation of action                          |     5      |            5            |    Y    |
+| Add a cafe post by submission of a form with confirmation of action |     5      |            5            |    Y    |
+| Confirmation of successful / unsuccessful actions via a flash msg   |     4      |            4            |    Y    |
+| Display of all posts to main home page                              |     5      |            5            |    Y    |
+| Display of all posts to admin profile (restricted access)           |     5      |            4            |    Y    |
+| Display of published user posts on profile page                     |     4      |            4            |    Y    |
+| Filter more relevant posts via search bar on home page              |     3      |            5            |    Y    |
+| Edit / delete functionality of  published user posts (non-admin)    |     5      |            5            |    Y    |
+| Edit / delete functionality of all posts (admin user only)          |     5      |            5            |    Y    |
+| Confirmation of delete action via a pop up modal                    |     5      |            4            |    Y    |
+| Restricted access for admin user to manage countries and images     |     5      |            5            |    Y    |
+| Add / edit functionality for countries and images                   |     5      |            5            |    Y    |
+| Option to view an individual cafe on a separate page                |     3      |            3            |    N    |
+| Option to upload a country image along with the country name [X]    |     2      |            2            |    X    |
+| Option to delete user account and associated posts [X]              |     4      |            3            |    X    |
 
 
 
