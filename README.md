@@ -101,9 +101,6 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 | Option to upload a country image along with the country name [X]    |     2      |            2            |    X    |
 | Option to delete user account and associated posts [X]              |     4      |            3            |    X    |
 
-
-
-
 ---
 
 ## Structure
