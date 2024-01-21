@@ -147,20 +147,24 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 
 ## Skeleton
 
-Wireframes for the website were created using the UI wireframe tool, [Balsamiq](https://balsamiq.com/), to plan the layout across desktop, tablet and mobile devices.
+Wireframes for the website were created using the UI wireframe tool, [Balsamiq](https://balsamiq.com/), to plan the layout.
 
-The layout and design was kept consistent across the pages / devices as much as possible.
+The layout and design were kept consistent across the pages / devices as much as possible.
+The overall design evolved as the project was developed, so some of the wireframe designs were not carried out / were adapted.
 
-The main game page consists of:
+The app consists of the following pages:
+- Home page
+- Register and signin page
+- Profile page (for users that are signed in)
+- Add cafe page
+- Edit cafe page
+- Delete cafe modal - instead of redirecting to a new page, a modal pop-up was used to confirm the delete action
+- Search page
 
-- A title
-- A subtitle description of the game
-- A countdown timer is on the top left corner ofthe gamegrid - displays how many seconds are remaining during a game
-- A moves counter that is on the top right corner of the gamegrid - displays the number of moves made during a game
-- A gamegrid of separated into x2 8 divs displaying the rear side of the cards - two cards can be flipped over at a time to make a match
-- A reset button is underneath the gamegrid - gives the user the option to reset the game to the beginning
-- A howtoplay button is underneath the gamegrid - gives the user the option to view the game instructions and access the prelearning material
-- A footer which contains a copyright statement
+For Admin Users only:
+- **Manage locations page**
+- **Add country page**
+- **Edit country page**
 
 ### Wireframes
 
@@ -219,14 +223,15 @@ As the project evolved and to align more with the Materialize color options, ext
 
 - **HTML5**
 - **CSS**
-- **Bootstrap**
+- **Materialize**
 - **JavaScript**
+- **Python3**
 
 - [GitHub and Github Pages](https://github.com/) - used to securely store the code and to host and deploy the live project
 - [GitPod](https://www.gitpod.io/) - used as a cloud-based IDE for development
 - [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) - used for testing and troublshooting code, along with Lighthouse auditing
 - [Balsamiq](https://balsamiq.com/wireframes/) - used to create wireframes during project planning
-- Procreate iPad app - used to draw and export the cell images
+- [Materialize](https://materializecss.com/) - used for front-end components and framework design
 - [redketchup.io](https://redketchup.io/) - used for resizing and converting image files to webp format
 - [beautifytools](https://beautifytools.com/) - used for beautifying code
 - [Coolors](https://coolors.co/) - used to generate a color palette for the website design
@@ -238,7 +243,7 @@ As the project evolved and to align more with the Materialize color options, ext
 - [W3 Jigsaw](https://jigsaw.w3.org/css-validator/validator) - used to validate CSS
 - [Tim Nelson's Markdown Builder](https://traveltimn.github.io/markdown-builder/) to help create the structure and some of the content for the README and TESTING.md files
 - [AmIResponsive?](https://ui.dev/amiresponsive?url=https://tarahwaters.github.io/milestone-project2/) - used to create a mockup of the website
-[RandomKeygen](https://randomkeygen.com/) - used to create a secure secret key
+- [RandomKeygen](https://randomkeygen.com/) - used to create a secure secret key
 
 
 ## Testing:
