@@ -217,21 +217,6 @@ There are other form-select options for the user to complete, e.g. for Power Out
 
 ### Future Features
 
-- **Future Feature 1**
-    - The infocards have already been designed with the potential to include 3 separate details to test learning of specialised cells knowledge (required for the GCSE Biology curriculum) - function / location / features. There could be increased difficulties levels where descriptions contain more complex information, or more cell types could be added as a bonus challenge.
-
-- **Future Feature 2**
-    - There could be an option to also add more revision topics to the game so the user can improve their knowledge in other areas of the curriculum.
-
-- **Future Feature 3**
-    - Sound effects could be added for when cards are clicked, flipped, matched or not matched. This could be more fun and engaging for the user, and also gives them instant feedback of success or error which may improve learning. This feature could be made optional for when the user prefers a quiet game.
-
-- **Future Feature 4**
-    - Details of some issues regarding responsiveness are detailed in the [TESTING.md](TESTING.md) file and these would be worked on in future development. Adding more cell cards as options for the game, could allow the grid layout to be changed (e.g. maximum 3x6 instead of 4x4) to optimise card readability. In future, it may be preferable to also use a responsive grid framework (from Boostrap for example) to avoid some of the issues I faced during styling.
-
-- **Future Feature 5** 
-    - Although this was not flagged up as an error during testing, it was considered a warning (and as feedback from user testing). The red/blue colour combination of backfaces for the function cards, may be redesigned for future. Currently, it does not affect readability of the 'Function' name, but may be slightly straining for the eyes. Perhaps an option could be included to toggle between different colour schemes for the game depending on the user's preference or needs.
-
 ---
 
 ## Skeleton
