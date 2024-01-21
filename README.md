@@ -132,7 +132,7 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 
 - Currently, only Admin users have access to the 'Manage Locations' page to add a new country to the list of options.
 
-##### Mobile Navbar Menu
+#### Mobile Navbar Menu
 
 - For smaller devices, the navbar opens from a sidebar menu icon:
 
