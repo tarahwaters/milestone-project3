@@ -246,19 +246,19 @@ Below are the initial wireframes created for the project during the planning sta
 Desktop versions were not created as the layout was intended to be the same as mobile, just on a larger scale (i.e more posts avaialble to view at once on larger devices).
 Unfortunately, there was not enough time to implement the Error404 page, but this would be added as part of the next sprint.
 
-**1. Wireframes 1**
+#### 1. Wireframes 1
 
 - [Home page / Signin page / Register page](/documentation/readme/wireframes-mob-home-login-register.png "Mobile Version")
 
-**2. Wireframes 2**
+#### 2. Wireframes 2
 
 - [Profile page / Individual cafe post](/documentation/readme/wireframes-mob-profile-cafepage.png "Mobile Version")
 
-**3. Wireframes 3**
+#### 3. Wireframes 3
 
 - [Add cafe / Edit cafe](/documentation/readme/wireframes-mob-addcafe-editcafe.png "Mobile Version")
 
-**4. Wireframes 4**
+#### 4. Wireframes 4
 
 - [Delete cafe / Error404](/documentation/readme/wireframes-mob-delete-error404.png "Mobile Version")
 
