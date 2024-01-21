@@ -302,6 +302,20 @@ There are other form-select options for the user to complete, e.g. for Power Out
 
 ![Delete Country success message](/documentation/readme/features/country-deleted-success.jpg)
 
+#### Search Bar feature
+
+- From the homepage, users can use the search bar to filter posts for keywords that apply to either the country, city or cafe names.
+
+![Search bar](/documentation/readme/features/search-bar.jpg)
+
+- By typing in a keyword and clicking the 'SEARCH' button or the search icon button (on smaller screens with less space), a search will be performed of the entire database of cafe posts. A message will verify 'Showing results for.. [search item]', along with the list of results:
+
+![Search Results example](/documentation/readme/features/search-results.jpg)
+
+- If no results are found, then a message will confirm this by saying 'No Result Found':
+
+![Search No Results example](/documentation/readme/features/search-no-result.jpg)
+
 
 ### Future Features
 
