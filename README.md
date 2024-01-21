@@ -199,6 +199,10 @@ The cafeworks logo was created using [Canva](https://canva.com/).
 
 ![cafeworks colorscheme](/documentation/readme/cafeworks-colors.png "cafeworks colorscheme")
 
+As the project evolved and to align more with the Materialize color options, extra colors were used based on the following extended palette:
+
+![cafeworks extended colorscheme](/documentation/readme/cafeworks-extended-color-palette.png "cafeworks colorscheme")
+
 ### Typography
 
 [canva.com](https://canva.com/) was used to create a logo from a template and their default font pairing was used from **Canva's 'Ultimate Guide to Font Pairing'**.
