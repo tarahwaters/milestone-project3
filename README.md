@@ -108,90 +108,87 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 
 ### Existing Features
 
-- **Logo link to Homepage**
+- #### Logo link to Homepage
 
-    - By clicking the logo on page, the user is redirected back to the Homepage. 
+- By clicking the logo on page, the user is redirected back to the Homepage. 
 
-    ![Logo link to Homepage](/documentation/readme/features/logo-link.jpg)
+![Logo link to Homepage](/documentation/readme/features/logo-link.jpg)
 
-- **Desktop Navbar Dropdown**
+#### Desktop Navbar Dropdown
 
-    - Desktop Navbar - contains a dropdown feature (by [Materialize](https://materializecss.com/navbar.html)) for the 'Account' options in order to save space.
+- Desktop Navbar - contains a dropdown feature (by [Materialize](https://materializecss.com/navbar.html)) for the 'Account' options in order to save space.
 
-    ![Navbar (desktop version)](/documentation/readme/features/navbar-desktop.jpg)
+![Navbar (desktop version)](/documentation/readme/features/navbar-desktop.jpg)
 
-    - This feature is particularly necessary for the Admin user, as more links are available to use, which take up too much space on medium-large screens.
+- This feature is particularly necessary for the Admin user, as more links are available to use, which take up too much space on medium-large screens.
 
-    ![Navbar Dropdown for Admin user](/documentation/readme/features/navbar-desktop-admin-dropdown.jpg)
+![Navbar Dropdown for Admin user](/documentation/readme/features/navbar-desktop-admin-dropdown.jpg)
 
-    ![Navbar Dropdown for Admin user](/documentation/readme/features/navbar-desktop-admin-dropdown2.jpg)
+![Navbar Dropdown for Admin user](/documentation/readme/features/navbar-desktop-admin-dropdown2.jpg)
 
-    - For non-admin users, this dropdown menu looks slightly different - e.g. before a user is logged in, the Account options are restricted to Signin / Register:
+- For non-admin users, this dropdown menu looks slightly different - e.g. before a user is logged in, the Account options are restricted to Signin / Register:
 
-    ![Navbar Dropdown for Admin user](/documentation/readme/features/navbar-desktop-non-admin-dropdown.jpg)
+![Navbar Dropdown for Admin user](/documentation/readme/features/navbar-desktop-non-admin-dropdown.jpg)
 
-    - Currently, only Admin users have access to the 'Manage Locations' page to add a new country to the list of options.
+- Currently, only Admin users have access to the 'Manage Locations' page to add a new country to the list of options.
 
-- **Mobile Navbar Menu**
+##### Mobile Navbar Menu
 
-    - For smaller devices, the navbar opens from a sidebar menu icon:
+- For smaller devices, the navbar opens from a sidebar menu icon:
 
-    ![Mobile Navbar Menu](/documentation/readme/features/navbar-mobile.jpg)
+![Mobile Navbar Menu](/documentation/readme/features/navbar-mobile.jpg)
 
-    ![Mobile Navbar Menu](/documentation/readme/features/navbar-mobile-menu.jpg)
+![Mobile Navbar Menu](/documentation/readme/features/navbar-mobile-menu.jpg)
 
-- **Signin Form with input validation**
+#### Signin Form with input validation
 
-    - Returning users can input their login details (username and password) via the form in order to access their account and add / edit / delete cafes.
+- Returning users can input their login details (username and password) via the form in order to access their account and add / edit / delete cafes.
 
-    ![Signin Confirmation](/documentation/readme/features/signin-form.jpg)
+![Signin Confirmation](/documentation/readme/features/signin-form.jpg)
 
-    - In the case of an incorrect username or password, the following message is displayed and the user is encouraged to try again:
+- In the case of an incorrect username or password, the following message is displayed and the user is encouraged to try again:
 
-    ![Signin Confirmation](/documentation/readme/features/signin-incorrect.jpg)
+![Signin Confirmation](/documentation/readme/features/signin-incorrect.jpg)
 
-    - Upon a successful signin, the user is redirected to their Profile page along with a Welcome message:
+- Upon a successful signin, the user is redirected to their Profile page along with a Welcome message:
 
-    ![Signin Confirmation](/documentation/readme/features/signin-confirmation.jpg)
+![Signin Confirmation](/documentation/readme/features/signin-confirmation.jpg)
 
-- **Registration Form with input validation**
+#### Registration Form with input validation
 
-    - Users are encouraged to register for an account so that they can start adding their cafe recommendations to the website. The registration form consists of a username and password input for secure user authentication.
+- Users are encouraged to register for an account so that they can start adding their cafe recommendations to the website. The registration form consists of a username and password input for secure user authentication.
 
-    ![Registration Form](/documentation/readme/features/register-form.jpg)
+![Registration Form](/documentation/readme/features/register-form.jpg)
 
-    - Helper text helps guides users to create a valid username and password, and a custom error/success message (via [Materialize](https://materializecss.com/text-inputs.html)) displays in a red (error) or green (success) colour. The form can only be submitted successfully when all inputs have been completed and validated. 
+- Helper text helps guides users to create a valid username and password, and a custom error/success message (via [Materialize](https://materializecss.com/text-inputs.html)) displays in a red (error) or green (success) colour. The form can only be submitted successfully when all inputs have been completed and validated. 
+
+- A flash message is shown to the user upon a successful registration attempt. See below for [Register success](#registration-success---welcome-message-and-redirection-to-profile-page).
+
+#### Registration Success - Welcome message and redirection to profile page
     
-    - A flash message is shown to the user upon a successful registration attempt. See below for **Register success**.
+- Upon a successful registration (ie. the new username and password has been accepted and saved to the database), the user is redirected to their new Profile page with a Welcome message displayed:
 
-- **Registration Success - Welcome message and redirection to profile page**
-    
-    - Upon a successful registration (ie. the new username and password has been accepted and saved to the database), the user is redirected to their new Profile page with a Welcome message displayed:
+![Successful registration and welcome message](/documentation/readme/features/registration-successful.jpg)
 
-    ![Successful registration and welcome message](/documentation/readme/features/registration-successful.jpg)
+Returning users will see a list of 'My Cafes' that they have published on this 'Profile' page. But as a new user with no cafes added yet, this information is displayed as a message on the profile along with a button to 'Add Cafe'.
 
-    Returning users will see a list of 'My Cafes' that they have published on this 'Profile' page. But as a new user with no cafes added yet, this information is displayed as a message on the profile along with a button to 'Add Cafe'.
+#### Signout Confirmation
 
-- **Signout Confirmation**
+- Users wishing to signout from their account can click the 'Signout' link in the navbar menu at anytime. The user will then receive confirmation that they are no longer signed in, and they will no longer be able to access their Profile until they sign back in.
 
-    - Users wishing to signout from their account can click the 'Signout' link in the navbar menu at anytime. The user will then receive confirmation that they are no longer signed in, and they will no longer be able to access their Profile until they sign back in.
+![Confirmation of Signout](/documentation/readme/features/signout-confirmation.jpg)
 
-    ![Confirmation of Signout](/documentation/readme/features/signout-confirmation.jpg)
+#### Add Cafe Button
 
-- **Add Cafe Button**
+- Signed in users can add a cafe to the database by clicking on the 'ADD CAFE' button which redirects to the 'Add Cafe' form:
 
-    - Signed in users can add a cafe to the database by clicking on the 'ADD CAFE' button which redirects to the 'Add Cafe' form:
+![Add Cafe Button](/documentation/readme/features/add-cafe-button.jpg)
 
-    ![Add Cafe Button](/documentation/readme/features/add-cafe-button.jpg)
+- If the user is not already signed in and they click the Homepage 'ADD CAFE' button, they will be redirected to signin to their account first with a message explaining this:
 
-    - If the user is not already signed in and they click the Homepage 'ADD CAFE' button, they will be redirected to signin to their account first with a message explaining this:
+![Add Cafe Redirect to Signin](/documentation/readme/features/add-cafe-signin-first.jpg)
 
-    ![Add Cafe Redirect to Signin](/documentation/readme/features/add-cafe-signin-first.jpg)
-
-    - The 'ADD CAFE' button can also be accessed via the Profile page (if no cafes have been added yet, see **Registration Success**).
-
-
-
+- The 'ADD CAFE' button can also be accessed via the Profile page (if no cafes have been added yet, see [Registration Success](#registration-success---welcome-message-and-redirection-to-profile-page))
 
 
 - **Feature 3**
