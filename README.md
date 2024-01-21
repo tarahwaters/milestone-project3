@@ -178,6 +178,18 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 
     ![Confirmation of Signout](/documentation/readme/features/signout-confirmation.jpg)
 
+- **Add Cafe Button**
+
+    - Signed in users can add a cafe to the database by clicking on the 'ADD CAFE' button which redirects to the 'Add Cafe' form:
+
+    ![Add Cafe Button](/documentation/readme/features/add-cafe-button.jpg)
+
+    - If the user is not already signed in and they click the Homepage 'ADD CAFE' button, they will be redirected to signin to their account first with a message explaining this:
+
+    ![Add Cafe Redirect to Signin](/documentation/readme/features/add-cafe-signin-first.jpg)
+
+    - The 'ADD CAFE' button can also be accessed via the Profile page (if no cafes have been added yet, see **Registration Success**).
+
 
 
 
