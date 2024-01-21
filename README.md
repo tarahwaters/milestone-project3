@@ -232,6 +232,18 @@ There are other form-select options for the user to complete, e.g. for Power Out
 
 - The card can be closed to view the basic info and image view again by either clicking on the X icon or the cafe title.
 
+#### Edit / Delete Cafe buttons
+
+![Edit / Delete buttons](/documentation/readme/features/cafe-card-buttons.jpg)
+
+- The edit / delete cafe buttons on the cafe cards will be visible for the user who published the cafe only (unless the user has admin privileges), either on the homepage or in the 'My Cafes' list of the user's Profile:
+
+![User's Profile Page (e.g. admin)](/documentation/readme/features/profile-page-example.jpg)
+
+- When clicked, these buttons will redirect to either the Edit Cafe form for the cafe, or a delete confirmation modal.
+
+
+
 
 ### Future Features
 
