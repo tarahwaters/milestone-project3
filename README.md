@@ -5,7 +5,7 @@
 
 ------
 
-**Cafeworks** is a web application that allows user to view and recommend their favourite cafes that are suitable for remote working.
+**Cafeworks** is a web application that allows user to view and recommend their favourite cafes that are suitable for remote working and study.
 
 It can often be difficult to find the right cafe which offers us everything we need for working / studying remotely - e.g. a free and reliable wifi connection, power outlets for charging laptops and devices, comfortable seating, and good quality food and drink options for refueling are also important!
 
