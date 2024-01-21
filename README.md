@@ -250,39 +250,128 @@ As the project evolved and to align more with the Materialize color options, ext
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
-## Deployment: **(suitable for MS1 and MS2)**
+## Deployment
 
-The site was deployed to GitHub Pages. The steps to deploy are as follows:
-- In the [GitHub repository](https://github.com/tarahwaters/milestone-project2), navigate to the Settings tab.
-- In the general settings side menu, open **Pages**.
-- From the source section drop-down menu, select **Deploy from a branch** and then **Main** Branch, and click "Save".
-- The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment and link to visit the site.
+The live deployed application can be found deployed on [Heroku](https://cafeworks-5f88ec79e78c.herokuapp.com/).
 
-The live link can be found [here](https://tarahwaters.github.io/milestone-project2)
+### MongoDB Non-Relational Database
 
-### Local Deployment **(suitable for MS1 and MS2)**
+This project uses [MongoDB](https://www.mongodb.com) for the Non-Relational Database.
+
+To obtain your own MongoDB Database URI, sign-up on their site, then follow these steps:
+
+- The name of the database on MongoDB should be called **insert-your-database-name-here**.
+- The collection(s) needed for this database should be **insert-your-collection-names-here**.
+- Click on the **Cluster** name created for the project.
+- Click on the **Connect** button.
+- Click **Connect Your Application**.
+- Copy the connection string, and replace `password` with your own password (also remove the angle-brackets).
+
+### Heroku Deployment
+
+This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+
+Deployment steps are as follows, after account setup:
+
+- Select **New** in the top-right corner of your Heroku Dashboard, and select **Create new app** from the dropdown menu.
+- Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select **Create App**.
+- From the new app **Settings**, click **Reveal Config Vars**, and set your environment variables.
+
+| Key | Value |
+| --- | --- |
+| `DATABASE_URL` | user's own value |
+| `IP` | 0.0.0.0 |
+| `MONGO_DBNAME` | user's own value |
+| `MONGO_URI` | user's own value |
+| `PORT` | 5000 |
+| `SECRET_KEY` | user's own value |
+
+Heroku needs two additional files in order to deploy properly.
+
+- requirements.txt
+- Procfile
+
+You can install this project's **requirements** (where applicable) using:
+
+- `pip3 install -r requirements.txt`
+
+If you have your own packages that have been installed, then the requirements file needs updated using:
+
+- `pip3 freeze --local > requirements.txt`
+
+The **Procfile** can be created with the following command:
+
+- `echo web: python app.py > Procfile`
+- *replace **app.py** with the name of your primary Flask app name; the one at the root-level*
+
+For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
+
+Either:
+
+- Select **Automatic Deployment** from the Heroku app.
+
+Or:
+
+- In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a app_name` (replace *app_name* with your app name)
+- After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type:
+  - `git push heroku main`
+
+The project should now be connected and deployed to Heroku!
+
+### Local Deployment
 
 This project can be cloned or forked in order to make a local copy on your own system.
 
-#### Cloning **(suitable for MS1 and MS2)**
+For either method, you will need to install any applicable packages found within the *requirements.txt* file.
+
+- `pip3 install -r requirements.txt`.
+
+You will need to create a new file called `env.py` at the root-level,
+and include the same environment variables listed above from the Heroku deployment steps, plus a few extras.
+
+The sample `env.py` file should look like the following:
+
+```python
+import os
+
+os.environ.setdefault("IP", "0.0.0.0")
+os.environ.setdefault("MONGO_DBNAME", "user's own value")
+os.environ.setdefault("MONGO_URI", "user's own value")
+os.environ.setdefault("PORT", "5000")
+os.environ.setdefault("SECRET_KEY", "user's own value")
+
+# local environment only (do not include these in production/deployment!)
+os.environ.setdefault("DB_URL", "user's own value")
+os.environ.setdefault("DEBUG", "True")
+os.environ.setdefault("DEVELOPMENT", "True")
+```
+
+#### Cloning
 
 You can clone the repository by following these steps:
 
-1. Go to the [GitHub repository](https://github.com/tarahwaters/milestone-project2) 
-2. Locate the Code button above the list of files and click it 
+1. Go to the [GitHub repository](https://github.com/tarahwaters/milestone-project3)
+2. Locate the Code button above the list of files and click it
 3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
-4. Open Git Bash or Terminal
+4. Open Git shell or Terminal
 5. Change the current working directory to the one where you want the cloned directory
 6. In your IDE Terminal, type the following command to clone my repository:
-	- `git clone https://github.com/tarahwaters/milestone-project2.git`
+	- `git clone https://github.com/tarahwaters/milestone-project3.git`
 7. Press Enter to create your local clone.
 
-Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+#### Forking
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/tarahwaters/milestone-project2)
+By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
+You can fork this repository by using the following steps:
 
-Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
-A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/tarahwaters/milestone-project3)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
+
+### Local VS Deployment
+
+I have compared both versions extensively and from what I can see, there are no differences between local version and the live site deployed on Heroku.
 
 ## Credits
 
@@ -304,6 +393,10 @@ For help with **styling the cafe form box drop-shadow**:
 
 For help with **validation error messages for 'add cafe' form inputs**
 - [Dynjashik's MSP3-Movie-collection app](https://github.com/Dynjashik/MSP3-Movie-collection/blob/master/app.py) - submitted for Code Institute MS3 project, validation logic adapted for use
+
+For help with README and TESTING markdown:
+- [Markdown Builder](https://traveltimn.github.io/markdown-builder) - README and TESTING tool to help generate the Markdown files and
+- [D3lyth](https://github.com/D3lyth/all-i-want-for-christmas/blob/main/README.md) for deployment / cloning instructions
 
 
 ## References 
