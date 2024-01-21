@@ -108,7 +108,7 @@ Y / N indicates a Yes / No as to whether each opportunity was acheived and imple
 
 ### Existing Features
 
-- #### Logo link to Homepage
+#### Logo link to Homepage
 
 - By clicking the logo on page, the user is redirected back to the Homepage. 
 
@@ -189,13 +189,6 @@ Returning users will see a list of 'My Cafes' that they have published on this '
 ![Add Cafe Redirect to Signin](/documentation/readme/features/add-cafe-signin-first.jpg)
 
 - The 'ADD CAFE' button can also be accessed via the Profile page (if no cafes have been added yet, see [Registration Success](#registration-success---welcome-message-and-redirection-to-profile-page))
-
-
-- **Feature 3**
-
-    - Feature description.
-
-    ![screenshot](#)
 
 
 ### Future Features
