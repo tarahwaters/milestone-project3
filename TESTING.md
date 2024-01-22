@@ -153,9 +153,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | **Add / edit / delete country buttons** | | | | |
 | | Click on any of the ADD COUNTRY / EDIT COUNTRY / DELETE button | Similar to the cafe buttons but this time relating to the Country cards (displaying the country name / image) | Pass | A click on the ADD COUNTRY button, redirects to the 'Add Country' page. A click on the EDIT button redirects to the prefilled country data page. A click on the YES button deletes the post from the page and display a success message. The NO button cancels the action and the user returns to the page |
 | **Add Cafe form**| Once the ADD CAFE button is clicked, a page opens with the Add Cafe form. Users must input all fields and select options to submit the form with the ADD CAFE button at the bottom of the page. | Validated inputs will result in redirection to the homepage and a flash message that of "Cafe Successfully Added!". Any invalid responses will prompt the user to try again | Pass | User can then see their added cafe on the Homepage or Profile page |
-| | Click on the Got It! button | User will be redirected to the gift page | Pass | |
-| All Gifs / Profile Page | | | | |
-| | Click on the Undo button | User will be redirected to the Profile page | Pass | Modal message will appear to confirm if user wants to undo action|
-| | Click on the Delete button | User will be redirected to the gift page | Pass | Modal message will appear to confirm deletion of gift |
-| | Click on the Got It! button | User will be redirected to the gift page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile or login page |
+| **Edit Cafe / Country form** | Click the EDIT cafe / country button | User is redirected to a prefilled form displaying either the cafe or country (admin users only) details | Pass | User can change the details and either CANCEL to return to the previous page, or save changes by clicking EDIT CAFE or EDIT COUNTRY. A success flash message will confirm any updates made. |
+| **Manage Locations page** | | | | |
+| | Click on the Manage Locations link | Admin user only will be redirected to the Manage Locations page | Pass | Admin user can view country cards saved to the database and either add / edit / delete countries from here |
+| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile or signin page |
