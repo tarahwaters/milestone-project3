@@ -176,3 +176,28 @@ User stories and fatures were tested manually as shown below:
 | As a returning user, I would like to have confirmation that the add / edit / delete of a post action has been successful | A flash message will display a successful add / edit / delete of cafe (or country for admin users), and the resulting action can then be seen from the Profile or homepage right away |
 
 The final user stories relate more to user experience and all links working correctly, which have been tested in Manual Testing.
+
+## Bugs
+
+- Delete pop-up modal was partially obstructed by cafe card content
+    - to fix this, I adjusted the CSS for: .card .card-image {
+z-index: 0;} - which made sure the card image is not obstructing the plane of the modal.
+
+- Python code non-compliant e.g. lines too long (93 > 79 characters) or indentation errors etc
+  - To fix these, I refactored the code to and placed breaks to make sure that it was PEP8 compliant.
+
+- Issues with displaying all cafes to the Profile page of Admin, while only published cafes are displayed to the non-admin user's Profile
+    - This involved first adding a decorator for an admin signin to be required on certain pages. Then when the Profile page is rendered, the app checks for an is_admin user in session before looping through all cafes / published user cafes. The admin user's details in the database also has the 'is_admin' attribute, which potentially could help the site have more than one admin (if their usernames are also defined in the app.py, as currently it relies on both a username and is_admin check)
+
+
+## Unfixed Bugs
+
+Some of the unfixed bugs are as noted below:
+
+- For iOS devices, the Materialize form select settings seems to clash with the default iOS, so that for the Add Cafe form, the select inputs show both option styles. I tried a customised JS file to override this, and multiple restyling attempts, but it seems that this is an ongoing compatibility issue with Materialize and iOS. 
+
+- The form can still be accessed and submitted successfully, but the UX is affected because of these glitches.
+
+![Screenshot of form select glitches for iOS devices](/documentation/testing/browsers/browser-safari-mobile-error.PNG)
+
+- Also on iOS devices, the navbar dropdown links for 'Account' can be a bit sticky - so sometimes multiple clicks are needed for the correct link to work or it needs to be reopened. This issue only seems to occur on iOS devices though which was difficult to troubleshoot and could again be a browser compatibility issue with Materialize settings.
