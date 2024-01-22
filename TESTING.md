@@ -157,3 +157,21 @@ Defensive programming was manually tested with the below user acceptance testing
 | **Manage Locations page** | | | | |
 | | Click on the Manage Locations link | Admin user only will be redirected to the Manage Locations page | Pass | Admin user can view country cards saved to the database and either add / edit / delete countries from here |
 | | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile or signin page |
+
+## User Story Testing
+
+User stories and fatures were tested manually as shown below:
+
+| User Story | Screenshot |
+| --- | --- |
+| As a new site user and returning user, I would like to click on the logo, so that I can return to the welcome page. | ![screenshot](documentation/feature01.png) |
+| As a returning user, I would like to fill in a log in form, so that I can get to my gift list to be able to delete/edit/add to it. | ![screenshot](documentation/feature02.png) |
+| As a new site user, I would like to register for an account, so that I can begin using the app and create gift lists. | ![screenshot](documentation/feature03.png) |
+| As a new site user and returning user, I would like to click on a button to begin adding items, so that I can create and add gifts to the list in an efficient manner. | ![screenshot](documentation/feature04.png) |
+| As a new site user and returning user, I would like to have access and see a christmas countdown timer, so that I can keep track of how many shopping days i have left. | ![screenshot](documentation/feature05.png) |
+| As a new site user and returning user, I would like to search for specific items on my list, so that I can check who I need to buy for, and also filter by shop if I'm at a specific store. | ![screenshot](documentation/feature06.png) |
+| As a new site user and returning user, I should be able to click on the delete button, so that I can get rid of gifts that I no longer need to buy. | ![screenshot](documentation/feature09.png) |
+| As a new site user and returning user, I would like to click on the Got it! button, so that I can move items from my to buy list but still keep a record of the gifts I've already bought. | ![screenshot](documentation/feature10.png) |
+| As a new site user and returning user, I would like to be able to click a button and edit a git, so that I can change the information incase of a mistake or a change in price/shop. | ![screenshot](documentation/feature11.png) |
+| As a new site user and returning user, I would like to be able to navigate around the site efficiently, so that I can make use of teh gift list functionallity when in a rush. | ![screenshot](documentation/feature14.png) |
+| As a new site user and returning user, I would like to be able to keep track of all the fifts bought in a central place, so that I can monitor how much I have spent and who I've bought gfts for. | ![screenshot](documentation/feature17.png) |
