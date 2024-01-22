@@ -30,3 +30,11 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcafeworks-5f88ec79e78c.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](documentation/testing/validation/validation-css-style.jpg) | Pass: No Errors (Error due to external library only) |
+
+### JavaScript
+
+I have used the recommended [JShint Validator](https://jshint.com) to validate my JS file.
+
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| script.js | ![screenshot](documentation/testing/validation/validation-js-hint-script.jpg)| Pass: No errors|
