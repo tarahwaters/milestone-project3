@@ -76,3 +76,28 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | 4K Monitor (devtools) | ![screenshot](documentation/testing/responsiveness/responsive-4K-monitor-devtools.jpg) | Minor issues with font-sizing |
 | iPad Pro | ![screenshot](documentation/testing/responsiveness/responsive-ipad-pro.PNG) | Works as expected ||
 | iPhone XS | ![screenshot](documentation/testing/responsiveness/responsive-iphone-XS.JPG) | Works as expected |
+
+## Lighthouse Audit
+
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
+| Page | Size | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Homepage | Mobile | ![screenshot](documentation/lighthouse-welcome-mobile.png) | Some minor warnings |
+| Homepage | Desktop | ![screenshot](documentation/lighthouse-welcome-desktop.png) | Few warnings |
+| Register | Mobile | ![screenshot](documentation/lighthouse-register-mobile.png) | Some minor warnings |
+| Register | Desktop | ![screenshot](documentation/lighthouse-register-desktop.png) | Few warnings |
+| Profile | Mobile | ![screenshot](documentation/lighthouse-login-mobile.png) | Slow response time due to large images |
+| Profile | Desktop | ![screenshot](documentation/lighthouse-login-desktop.png) | Slow response time due to large images |
+| Signin | Mobile | ![screenshot](documentation/lighthouse-profile-mobile.png) | Slow response time due to large images |
+| Signin | Desktop | ![screenshot](documentation/lighthouse-profile-desktop.png) | Slow response time due to large images |
+| Add Cafe | Mobile | ![screenshot](documentation/lighthouse-allgifts-mobile.png) | Slow response time due to large images |
+| Add Cafe | Desktop | ![screenshot](documentation/lighthouse-allgifts-desktop.png) | Slow response time due to large images |
+| Edit Cafe | Mobile | ![screenshot](documentation/lighthouse-editgift-mobile.png) | Slow response time due to large images |
+| Edit Cafe | Desktop | ![screenshot](documentation/lighthouse-editgift-desktop.png) | Slow response time due to large images |
+| Manage Locations (admin) | Mobile | ![screenshot](documentation/lighthouse-addgift-mobile.png) | Slow response time due to large images |
+| Manage Locations (admin) | Desktop | ![screenshot](documentation/lighthouse-addgift-desktop.png) | Slow response time due to large images |
+| Add Country (admin) | Mobile | ![screenshot](documentation/lighthouse-addgift-mobile.png) | Slow response time due to large images |
+| Add Country (admin) | Desktop | ![screenshot](documentation/lighthouse-addgift-desktop.png) | Slow response time due to large images |
+| Edit Country (admin) | Mobile | ![screenshot](documentation/lighthouse-addgift-mobile.png) | Slow response time due to large images |
+| Edit Country (admin) | Desktop | ![screenshot](documentation/lighthouse-addgift-desktop.png) | Slow response time due to large images |
