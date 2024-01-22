@@ -103,3 +103,40 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Add Country (admin) | Desktop | ![screenshot](documentation/testing/lighthouse/add-country-desktop.jpg) | Few accessibility warnings |
 | Edit Country (admin) | Mobile | ![screenshot](documentation/testing/lighthouse/edit-country-mobile.jpg) | Few accessibility warnings |
 | Edit Country (admin) | Desktop | ![screenshot](documentation/testing/lighthouse/edit-country-desktop.jpg) | Few accessibility warnings |
+
+## Defensive Programming
+
+Defensive programming was manually tested with the below user acceptance testing:
+
+| Page | User Action | Expected Result | Pass/Fail | Comments |
+| --- | --- | --- | --- | --- |
+| Welcome Page | | | | |
+| | Click on Logo | Redirection to Home page | Pass | |
+| | Click on Profile link in navbar | Redirection to Profile page | Pass | |
+| | Click on Profile link in sidebar | Redirection to Profile page | Pass | |
+| | Click on Register link in navbar | Redirection to Register page | Pass | |
+| | Click on Register link in sidebar | Redirection to Register page | Pass | |
+| | Click on Gifts link in navbar | Redirection to Gifts page | Pass | |
+| | Click on Gifts link in sidebar | Redirection to Gifts page | Pass | |
+| | Click on Add Gift link in navbar | Redirection to Add Gift page | Pass | |
+| | Click on Add Gift link in sidebar | Redirection to Add Gift page | Pass | |
+| | Click on Register button | Redirection to Register page | Pass | |
+| | Enter username on register form | Field will accept freeform text | Pass | |
+| | Enter valid password | Field will only accept password format | Pass | Registration successful flash massage shown for successful new profile |
+| Log In | | | | |
+| | Click on the Login link | Redirection to Login page | Pass | |
+| | Enter username on login page | Field will accept freeform text | Pass | |
+| | Enter valid password on login page | Field will only accept password of with a certain format/length | Pass | User you are logged in message if successfully logged in |
+| Log Out | | | | |
+| | Click Logout button | Redirects user to logout page | Pass | Flash message will confirm log out |
+| Profile | | | | |
+| | Click on Profile button | User will be redirected to the Profile page | Pass | |
+| Add Gift | | | | |
+| | Click on the Edit button | User will be redirected to the edit gift page | Pass | |
+| | Click on the Delete button | User will be redirected to the gift page | Pass | Modal message will appear to confirm deletion of gift |
+| | Click on the Got It! button | User will be redirected to the gift page | Pass | |
+| All Gifs / Profile Page | | | | |
+| | Click on the Undo button | User will be redirected to the Profile page | Pass | Modal message will appear to confirm if user wants to undo action|
+| | Click on the Delete button | User will be redirected to the gift page | Pass | Modal message will appear to confirm deletion of gift |
+| | Click on the Got It! button | User will be redirected to the gift page | Pass | |
+| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile or login page |
