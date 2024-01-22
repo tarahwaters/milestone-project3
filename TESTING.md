@@ -83,8 +83,8 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Homepage | Mobile | ![screenshot](documentation/lighthouse-welcome-mobile.png) | Some minor warnings |
-| Homepage | Desktop | ![screenshot](documentation/lighthouse-welcome-desktop.png) | Few warnings |
+| Homepage | Mobile | ![screenshot](documentation/testing/lighthouse/homepage-mobile.jpg) | Slow load time mainly due to large images and improper image sizing |
+| Homepage | Desktop | ![screenshot](documentation/testing/lighthouse/homepage-desktop.jpg) | Slow load time mainly due to large images and improper image sizing |
 | Register | Mobile | ![screenshot](documentation/lighthouse-register-mobile.png) | Some minor warnings |
 | Register | Desktop | ![screenshot](documentation/lighthouse-register-desktop.png) | Few warnings |
 | Profile | Mobile | ![screenshot](documentation/lighthouse-login-mobile.png) | Slow response time due to large images |
