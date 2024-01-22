@@ -53,7 +53,6 @@ As a user I would like:
 - to be able to securely log out or delete the account as needed
 - to be able to explore posts that have been shared by other users (even without a registered account)
 - to be able to filter more relevant posts via a search bar
-- to be able to open an individual post to engage with the content on a full screen
 - to be able to add a post via their personal account by filling out a form and submitting it to the website database
 - to be able to view the newly shared travel post and edit / delete if required
 - to be given a warning when deleting a post, and the option to either cancel or continute with the delete action

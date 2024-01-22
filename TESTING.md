@@ -162,16 +162,17 @@ Defensive programming was manually tested with the below user acceptance testing
 
 User stories and fatures were tested manually as shown below:
 
-| User Story | Screenshot |
+| User Story | Result |
 | --- | --- |
-| As a new site user and returning user, I would like to click on the logo, so that I can return to the welcome page. | ![screenshot](documentation/feature01.png) |
-| As a returning user, I would like to fill in a log in form, so that I can get to my gift list to be able to delete/edit/add to it. | ![screenshot](documentation/feature02.png) |
-| As a new site user, I would like to register for an account, so that I can begin using the app and create gift lists. | ![screenshot](documentation/feature03.png) |
-| As a new site user and returning user, I would like to click on a button to begin adding items, so that I can create and add gifts to the list in an efficient manner. | ![screenshot](documentation/feature04.png) |
-| As a new site user and returning user, I would like to have access and see a christmas countdown timer, so that I can keep track of how many shopping days i have left. | ![screenshot](documentation/feature05.png) |
-| As a new site user and returning user, I would like to search for specific items on my list, so that I can check who I need to buy for, and also filter by shop if I'm at a specific store. | ![screenshot](documentation/feature06.png) |
-| As a new site user and returning user, I should be able to click on the delete button, so that I can get rid of gifts that I no longer need to buy. | ![screenshot](documentation/feature09.png) |
-| As a new site user and returning user, I would like to click on the Got it! button, so that I can move items from my to buy list but still keep a record of the gifts I've already bought. | ![screenshot](documentation/feature10.png) |
-| As a new site user and returning user, I would like to be able to click a button and edit a git, so that I can change the information incase of a mistake or a change in price/shop. | ![screenshot](documentation/feature11.png) |
-| As a new site user and returning user, I would like to be able to navigate around the site efficiently, so that I can make use of teh gift list functionallity when in a rush. | ![screenshot](documentation/feature14.png) |
-| As a new site user and returning user, I would like to be able to keep track of all the fifts bought in a central place, so that I can monitor how much I have spent and who I've bought gfts for. | ![screenshot](documentation/feature17.png) |
+| As a new site user and returning user, I would like to to know what the website is about and what service it is providing | A clear desciption of the website is found on the homepage |
+| As a returning user, I would like to signin to my account to access my Profile and published cafes | Returning users can access the signin page via the navbar or by clicking on the ADD CAFE button |
+| As a new site user, to be able to register for a secure account by creating a login username and password | New users can click on the Register link from the navbar, or the link under the Signin page. Users are redirected to the Signin page if they ever click an ADD CAFE button without being signed in |
+| As a signed in user, I would like to be able to securely log out or delete the account as needed | The user cannot yet delete their account, but they can signout via the 'Signout' link which also gives them confirmation via a Flash message when it is successful |
+| As a new site user and returning user, I would like to to be able to explore posts that have been shared by other users | All published cafes can be viewed from the homepage |
+| As a new site user and returning user, I would like to to be able to filter more relevant posts via a search bar | All site users can filter results via the search bar on the homepage. Cafes will be displayed if there are cafe names / country names / city names that match the search terms |
+| As a returning user, I would like to be able to add a post via my personal account by filling out a form and submitting it to the website database | Signed in users can add a cafe by submitted a valid Add Cafe form. A success message will be displayed, and then the cafe can be viewed from the Profile or homepage |
+| As a returning user, I would like to be able to view the newly shared travel post and edit / delete if required | Edit and delete functionality it available to published cafe users from the Profile or homepage, while an admin user can edit / delete all cafes |
+| As returning user, I would like to be given a warning when deleting a post, and the option to either cancel or continute with the delete action | A delete modal message will pop up to confirm the user wishes to delete a post before the action takes place. Then there is confirmation via a flash message. Or the user can cancel and return to the previous page |
+| As a returning user, I would like to have confirmation that the add / edit / delete of a post action has been successful | A flash message will display a successful add / edit / delete of cafe (or country for admin users), and the resulting action can then be seen from the Profile or homepage right away |
+
+The final user stories relate more to user experience and all links working correctly, which have been tested in Manual Testing.
