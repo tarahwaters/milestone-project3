@@ -87,8 +87,10 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Homepage | Desktop | ![screenshot](documentation/testing/lighthouse/homepage-desktop.jpg) | Slow load time mainly due to large images and improper image sizing |
 | Register | Mobile | ![screenshot](documentation/testing/lighthouse/register-mobile.jpg) | Some minor warnings for accessbility due to contrast of background colors, non-sequential heading elements and discernible links/labels |
 | Register | Desktop | ![screenshot](documentation/testing/lighthouse/register-desktop.jpg) | Some minor warnings for accessbility due to contrast of background colors, non-sequential heading elements and discernible links/labels |
-| Profile | Mobile | ![screenshot](documentation/lighthouse-login-mobile.png) | Slow response time due to large images |
-| Profile | Desktop | ![screenshot](documentation/lighthouse-login-desktop.png) | Slow response time due to large images |
+| Profile (no cafes) | Mobile | ![screenshot](documentation/testing/lighthouse/profile-nocafes-mobile.jpg) | Some accessibility warnings |
+| Profile (no cafes) | Desktop | ![screenshot](documentation/testing/lighthouse/profile-nocafes-desktop.jpg) | Some accessibility warnings |
+| Profile (all cafes) | Mobile | ![screenshot](documentation/testing/lighthouse/profile-allcafes-mobile.jpg) | Heavy image load time and some accessbility warnings |
+| Profile (all cafes) | Desktop | ![screenshot](documentation/testing/lighthouse/profile-allcafes-desktop.jpg) | Heavy image load time and some accessbility warnings |
 | Signin | Mobile | ![screenshot](documentation/lighthouse-profile-mobile.png) | Slow response time due to large images |
 | Signin | Desktop | ![screenshot](documentation/lighthouse-profile-desktop.png) | Slow response time due to large images |
 | Add Cafe | Mobile | ![screenshot](documentation/lighthouse-allgifts-mobile.png) | Slow response time due to large images |
