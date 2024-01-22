@@ -93,8 +93,8 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Profile (all cafes) | Desktop | ![screenshot](documentation/testing/lighthouse/profile-allcafes-desktop.jpg) | Heavy image load time and some accessbility warnings |
 | Signin | Mobile | ![screenshot](documentation/testing/lighthouse/signin-mobile.jpg) | Few accessibility warnings |
 | Signin | Desktop | ![screenshot](documentation/testing/lighthouse/signin-desktop.jpg) | Few accessibility warnings |
-| Add Cafe | Mobile | ![screenshot](documentation/lighthouse-allgifts-mobile.png) | Slow response time due to large images |
-| Add Cafe | Desktop | ![screenshot](documentation/lighthouse-allgifts-desktop.png) | Slow response time due to large images |
+| Add Cafe | Mobile | ![screenshot](documentation/testing/lighthouse/add-cafe-mobile.jpg) | Few accessibility warnings |
+| Add Cafe | Desktop | ![screenshot](documentation/testing/lighthouse/add-cafe-desktop.jpg) | Few accessibility warnings |
 | Edit Cafe | Mobile | ![screenshot](documentation/lighthouse-editgift-mobile.png) | Slow response time due to large images |
 | Edit Cafe | Desktop | ![screenshot](documentation/lighthouse-editgift-desktop.png) | Slow response time due to large images |
 | Manage Locations (admin) | Mobile | ![screenshot](documentation/lighthouse-addgift-mobile.png) | Slow response time due to large images |
