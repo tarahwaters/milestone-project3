@@ -142,8 +142,8 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Enter valid password on signin page | Field will only accept password of with a certain format/length | Pass | Redirection to user's Profile page with a Welcome, [username] message if successfully signed in, otherwise flash error message of "Sorry! Incorrect Username and/or Password" |
 | **Sign Out** | | | | |
 | | Click Signout button | Flash message will display confirmation of a successful signout, while redirecting to the homepage | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
+| **Profile** | | | | |
+| | Click on Profile button | User will be redirected to the Profile page | Pass | Cafe Cards published by the user will be displayed here, or if the user is 'admin', then all cafes will be displayed with EDIT / DELETE functionality|
 | Add Gift | | | | |
 | | Click on the Edit button | User will be redirected to the edit gift page | Pass | |
 | | Click on the Delete button | User will be redirected to the gift page | Pass | Modal message will appear to confirm deletion of gift |
