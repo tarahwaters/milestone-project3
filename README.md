@@ -619,17 +619,14 @@ For help with **validation error messages for 'add cafe' form inputs**
 
 For help with README and TESTING markdown:
 - [Markdown Builder](https://traveltimn.github.io/markdown-builder) - README and TESTING tool to help generate the Markdown files and
-- [D3lyth](https://github.com/D3lyth/all-i-want-for-christmas/blob/main/README.md) for deployment / cloning instructions
+- [D3lyth](https://github.com/D3lyth/all-i-want-for-christmas/blob/main/README.md) for deployment / cloning instructions and templates for the README and TESTING files
 
 
 ## References 
 
-- **Reference1**: [Link description](#)
-- **Reference2**: [Link description](#) - deployed project and [github](#)
-
-- **Reference3**: [Link description](#) - deployed project and [github](#)
-
-- **Reference4**: [Link description](#) - deployed project and [github](#)
+- [Emma Hewson's SWIMON MS3 project](https://swim-mon.herokuapp.com/), and [github repo](https://github.com/emmahewson/mp3-swimmon)
+- [Dynjashik's MSP3-Movie-collection MS3 app](https://my-milestone-project3.herokuapp.com/), and [github repo](https://github.com/Dynjashik/MSP3-Movie-collection)
+- [D3lyth's All-I-Want-For-Christmas MS3 app](https://all-i-want-for-christmas-11c6c44413ce.herokuapp.com/), and [github repo](https://github.com/D3lyth/all-i-want-for-christmas)
 
 - [StackOverflow](https://stackoverflow.com/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/)
@@ -663,7 +660,9 @@ For help with **displaying country images using jinja looping**:
 
 ## Acknowledgements
 
-- All my friends and family who tested the game and gave me valuable feedback and support along the way
+- All my friends and family who tested the app and gave me valuable feedback and support along the way
 - Code Institute Tutor support
 - Cohort Facilitator - [Iris Smok](https://ie.linkedin.com/in/irissmok)
-- Mentor for support throughout the project
+- Cohort Facilitator - [Alan Bushell](https://ie.linkedin.com/in/bushell23)
+- Mentor for support throughout the project - [Sandeep Aggarwal](https://github.com/asandeep)
+- Peer support and encouragement from Delyth Jennings - [D3lyth](https://github.com/D3lyth)
