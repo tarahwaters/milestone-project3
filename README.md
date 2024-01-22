@@ -456,7 +456,6 @@ Database name: **cafeworks**
 - [Balsamiq](https://balsamiq.com/wireframes/) - used to create wireframes during project planning
 - [Materialize](https://materializecss.com/) - used for front-end components and framework design
 - [redketchup.io](https://redketchup.io/) - used for resizing and converting image files to webp format
-- [beautifytools](https://beautifytools.com/) - used for beautifying code
 - [Coolors](https://coolors.co/) - used to generate a color palette for the website design
 - [Canva](https://www.canva.com/) - used to design and edit the card images, gifs and pdf resources used in the game
 - [FontJoy](https://fontjoy.com/) - used to generate visually appealing font pairings for  the website
@@ -467,6 +466,7 @@ Database name: **cafeworks**
 - [Tim Nelson's Markdown Builder](https://traveltimn.github.io/markdown-builder/) to help create the structure and some of the content for the README and TESTING.md files
 - [AmIResponsive?](https://ui.dev/amiresponsive?url=https://tarahwaters.github.io/milestone-project2/) - used to create a mockup of the website
 - [RandomKeygen](https://randomkeygen.com/) - used to create a secure secret key
+- [Code Institute Python Linter](https://pep8ci.herokuapp.com/) - used to validate Python code
 
 
 ## Testing:
