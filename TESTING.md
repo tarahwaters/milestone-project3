@@ -47,3 +47,17 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | app.py | [PEP8 CI](https://pep8ci.herokuapp.com/) | ![screenshot](documentation/testing/validation/validation-python-app.jpg) | No Errors |
+
+## Browser Compatibility
+
+I've tested my deployed project on multiple browsers to check for compatibility issues.
+
+| Browser | Screenshot | Notes |
+| --- | --- | --- |
+| Chrome | ![screenshot](documentation/testing/browsers/browser-chrome.jpg) | Works as expected |
+| Firefox | ![screenshot](documentation/testing/browsers/browser-firefox.jpg) | Works as expected |
+| Safari (iPad) | ![screenshot iPad](documentation/testing/browsers/browser-safari.PNG) | Some minor errors such as sticky navbar links (for larger screens), and iOS form select conflict with Materialize settings (see error screenshot below). Otherwise works as expected |
+| Safari (mobile) |![screenshot iPhone XS](/documentation/testing/browsers/browser-safari-mobile.JPG) | No errors with the mobile navbar, but the form select issue still persists. Otherwise works as expected |
+| Safari (form select error) |![screenshot error iPhone XS](/documentation/testing/browsers/browser-safari-mobile-error.PNG)| Materialize select options are often glitching, but clicking the default iOS <> button can allow the user to still submit the form |
+| Brave | ![screenshot](documentation/testing/browsers/browser-brave.jpg) | Works as expected |
+| Opera | ![screenshot](documentation/testing/browsers/browser-opera.jpg) | Works as expected |
