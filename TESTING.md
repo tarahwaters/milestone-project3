@@ -85,8 +85,8 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | --- | --- | --- | --- |
 | Homepage | Mobile | ![screenshot](documentation/testing/lighthouse/homepage-mobile.jpg) | Slow load time mainly due to large images and improper image sizing |
 | Homepage | Desktop | ![screenshot](documentation/testing/lighthouse/homepage-desktop.jpg) | Slow load time mainly due to large images and improper image sizing |
-| Register | Mobile | ![screenshot](documentation/lighthouse-register-mobile.png) | Some minor warnings |
-| Register | Desktop | ![screenshot](documentation/lighthouse-register-desktop.png) | Few warnings |
+| Register | Mobile | ![screenshot](documentation/testing/lighthouse/register-mobile.jpg) | Some minor warnings for accessbility due to contrast of background colors, non-sequential heading elements and discernible links/labels |
+| Register | Desktop | ![screenshot](documentation/testing/lighthouse/register-desktop.jpg) | Some minor warnings for accessbility due to contrast of background colors, non-sequential heading elements and discernible links/labels |
 | Profile | Mobile | ![screenshot](documentation/lighthouse-login-mobile.png) | Slow response time due to large images |
 | Profile | Desktop | ![screenshot](documentation/lighthouse-login-desktop.png) | Slow response time due to large images |
 | Signin | Mobile | ![screenshot](documentation/lighthouse-profile-mobile.png) | Slow response time due to large images |
