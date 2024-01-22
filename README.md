@@ -440,6 +440,8 @@ As the project evolved and to align more with the Materialize color options, ext
 Database name: **cafeworks**
 ![Database Schema diagram](/documentation/readme/database-schema-diagram.jpg)
 
+* In addition to the basic 'user' schema, the 'admin' user also contains an 'is_admin' Boolean value of True (which is utilised for allowing certain privileges for only admin users)
+
 ## Tools and Technologies Used:
 
 - **HTML5**
