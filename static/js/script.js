@@ -1,3 +1,6 @@
+/* jshint esversion: 6 */
+/* global $ */
+
 /*
     jQuery for MaterializeCSS initialization
 */
