@@ -144,9 +144,15 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click Signout button | Flash message will display confirmation of a successful signout, while redirecting to the homepage | Pass | |
 | **Profile** | | | | |
 | | Click on Profile button | User will be redirected to the Profile page | Pass | Cafe Cards published by the user will be displayed here, or if the user is 'admin', then all cafes will be displayed with EDIT / DELETE functionality|
-| Add Gift | | | | |
-| | Click on the Edit button | User will be redirected to the edit gift page | Pass | |
-| | Click on the Delete button | User will be redirected to the gift page | Pass | Modal message will appear to confirm deletion of gift |
+| **Add Cafe button** | | | | |
+| | Click on the ADD CAFE button | If user is signed in, they will be redirected to the 'Add Cafe' page, otherwise they will be redirected to the Signin page with a flash message: "Please signin to your account first!" | Pass | |
+| **Edit Cafe button** | | | | |
+| | Click on the EDIT CAFE button | The user is redirected to the Edit Cafe form with prefilled data relating to the Cafe post the button was associated with | Pass | |
+| **Delete Cafe button** | | | | |
+| | Click on the DELETE CAFE button | A pop up modal will display on the screen to confirm that the user wants to delete the cafe post - with YES or NO buttons to respond | Pass | A click on the YES button deletes the post from the page and display a success message. The NO button cancels the action and the user returns to the page |
+| **Add / edit / delete country buttons** | | | | |
+| | Click on any of the ADD COUNTRY / EDIT COUNTRY / DELETE button | Similar to the cafe buttons but this time relating to the Country cards (displaying the country name / image) | Pass | A click on the ADD COUNTRY button, redirects to the 'Add Country' page. A click on the EDIT button redirects to the prefilled country data page. A click on the YES button deletes the post from the page and display a success message. The NO button cancels the action and the user returns to the page |
+| **Add Cafe form**| Once the ADD CAFE button is clicked, a page opens with the Add Cafe form. Users must input all fields and select options to submit the form with the ADD CAFE button at the bottom of the page. | Validated inputs will result in redirection to the homepage and a flash message that of "Cafe Successfully Added!". Any invalid responses will prompt the user to try again | Pass | User can then see their added cafe on the Homepage or Profile page |
 | | Click on the Got It! button | User will be redirected to the gift page | Pass | |
 | All Gifs / Profile Page | | | | |
 | | Click on the Undo button | User will be redirected to the Profile page | Pass | Modal message will appear to confirm if user wants to undo action|
