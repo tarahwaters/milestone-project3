@@ -423,6 +423,13 @@ As the project evolved and to align more with the Materialize color options, ext
 
 ![Font pairings](/documentation/readme/canva-font-pairing.webp "Font pairings")
 
+## Database
+
+[MongoDB](https://www.mongodb.com/) was used to create a non-relational database with the following schema design:
+
+Database name: **cafeworks**
+![Database Schema diagram](/documentation/readme/database-schema-diagram.jpg)
+
 ## Tools and Technologies Used:
 
 - **HTML5**
