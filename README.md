@@ -346,6 +346,17 @@ There are other form-select options for the user to complete, e.g. for Power Out
 
 ### Future Features
 
+The following features would be considered in future work to the project that would improve the useability and interest of this app:
+
+- **Allow users to upload a Cafe / or Country image**:
+  - this would require access to a cloud storing image database which was too complex to implement at this time
+- **Allow users to add any Country they wish**:
+  - this is also possible but required more outsourcing (e.g. use of an API for a list of country names etc), and extra user functionaliy. Perhaps as the site develops, this would be a nice feature and gives the users more freedom to add locations that are relevant to them.
+- **Allow users to link Google Map data to the cafes**:
+  - I did look into this, but it required paid subscriptions to Google's API services. This would be a great way to streamline the cafe data through the app with more targeted image display.
+- **Allow users to 'like' a post or see how many people have 'viewed' their posts**:
+  - this could help the cafeworks community grow much like a social media environment, and encourages more users to share their views and recommendations.
+
 ---
 
 ## Skeleton
