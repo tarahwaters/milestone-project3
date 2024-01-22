@@ -97,8 +97,8 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Add Cafe | Desktop | ![screenshot](documentation/testing/lighthouse/add-cafe-desktop.jpg) | Few accessibility warnings |
 | Edit Cafe | Mobile | ![screenshot](documentation/testing/lighthouse/edit-cafe-mobile.jpg) | Heavy image load time and some accessbility warnings |
 | Edit Cafe | Desktop | ![screenshot](documentation/testing/lighthouse/edit-country-desktop.jpg) | Few accessibility warnings |
-| Manage Locations (admin) | Mobile | ![screenshot](documentation/lighthouse-addgift-mobile.png) | Slow response time due to large images |
-| Manage Locations (admin) | Desktop | ![screenshot](documentation/lighthouse-addgift-desktop.png) | Slow response time due to large images |
+| Manage Locations (admin) | Mobile | ![screenshot](documentation/testing/lighthouse/manage-locations-mobile.jpg) | Heavy image load time and some accessbility warnings |
+| Manage Locations (admin) | Desktop | ![screenshot](documentation/testing/lighthouse/manage-locations-desktop.jpg) | Few accessibility warnings |
 | Add Country (admin) | Mobile | ![screenshot](documentation/lighthouse-addgift-mobile.png) | Slow response time due to large images |
 | Add Country (admin) | Desktop | ![screenshot](documentation/lighthouse-addgift-desktop.png) | Slow response time due to large images |
 | Edit Country (admin) | Mobile | ![screenshot](documentation/lighthouse-addgift-mobile.png) | Slow response time due to large images |
