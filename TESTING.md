@@ -61,3 +61,18 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Safari (form select error) |![screenshot error iPhone XS](/documentation/testing/browsers/browser-safari-mobile-error.PNG)| Materialize select options are often glitching, but clicking the default iOS <> button can allow the user to still submit the form |
 | Brave | ![screenshot](documentation/testing/browsers/browser-brave.jpg) | Works as expected |
 | Opera | ![screenshot](documentation/testing/browsers/browser-opera.jpg) | Works as expected |
+
+## Responsiveness
+
+I've tested my deployed project on multiple devices to check for responsiveness issues.
+
+| Device | Screenshot | Notes |
+| --- | --- | --- |
+| Mobile (DevTools) | ![screenshot](documentation/testing/responsiveness/responsive-mobile-devtools.jpg) | Works as expected |
+| Tablet (DevTools) | ![screenshot](documentation/testing/responsiveness/responsive-tablet-devtools.jpg) | Works as expected |
+| Laptop (devtools) | ![screenshot](documentation/testing/responsiveness/responsive-17inch-laptop-devtools.jpg) | Works as expected |
+| 13inch Laptop | ![screenshot](documentation/testing/responsiveness/responsive-13inch-laptop.jpg) | Works as expected |
+| XL Monitor (devtools) | ![screenshot](documentation/testing/responsiveness/responsive-XL-monitor-devtools.jpg) | Minor issues with font-sizing   |
+| 4K Monitor (devtools) | ![screenshot](documentation/testing/responsiveness/responsive-4K-monitor-devtools.jpg) | Minor issues with font-sizing |
+| iPad Pro | ![screenshot](documentation/testing/responsiveness/responsive-ipad-pro.PNG) | Works as expected ||
+| iPhone XS | ![screenshot](documentation/testing/responsiveness/responsive-iphone-XS.JPG) | Works as expected |
