@@ -133,12 +133,13 @@ Defensive programming was manually tested with the below user acceptance testing
 | Close a published Cafe Card | Click on the Country image / Cafe name / chevron icon to close the expanded view | The cafe card returns to the original format of Country image / Cafe name / City name as visible to the user | Pass | Applicable to **All Pages** |
 | Footer Social Links | Click the LinkedIn / Github icons | Profile pages for Tarah Waters' LinkedIn / Github will open in a new tab | Pass | Applicable to **All Pages** |
 | **Register Page** | | | | |
-| | Enter username on register form | Field will accept freeform text | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | Registration successful flash massage shown for successful new profile |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
-| | Enter username on login page | Field will accept freeform text | Pass | |
-| | Enter valid password on login page | Field will only accept password of with a certain format/length | Pass | User you are logged in message if successfully logged in |
+| | Click on the Register link | Redirection to Register page | Pass | |
+| Username input | Enter username on register form | Field will accept a combination of numbers and letters (5-15 characters long) in accordance with the following RegEx pattern: ^[a-zA-Z0-9]{5,15}$. | Pass | An invalid username will prompt the user with helper text in red to show there is an error. A valid username will be highlighted underneath in green and the helper text will change to "Username criteria met". A flash message will show is a username already exists in the database only after the form has been submitted. |
+| Password input | Enter a valid password | Field will only password patterns as with the username format: ^[a-zA-Z0-9]{5,15}$. As with username validation, an invalid password will display red helper text to match password requirements | Pass | Registration successful - a flash massage is shown for a successful new profile / A flash error message is shown to confirm an invalid username or password |
+| **Sign In** | | | | |
+| | Click on the Signin link | Redirection to Signin page | Pass | |
+| | Enter username on signin page | Field will accept usernames of the required format/length (as described for **Register Page**) | Pass | "Username criteria met" helper text will display in green if username meets validation criteria, otherwise the red helper text will guide the user (like on the Register page) |
+| | Enter valid password on signin page | Field will only accept password of with a certain format/length | Pass | Redirection to user's Profile page with a Welcome, [username] message if successfully signed in, otherwise flash error message of "Sorry! Incorrect Username and/or Password" |
 | Log Out | | | | |
 | | Click Logout button | Redirects user to logout page | Pass | Flash message will confirm log out |
 | Profile | | | | |
