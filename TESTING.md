@@ -110,17 +110,29 @@ Defensive programming was manually tested with the below user acceptance testing
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
-| Welcome Page | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Profile link in navbar | Redirection to Profile page | Pass | |
-| | Click on Profile link in sidebar | Redirection to Profile page | Pass | |
-| | Click on Register link in navbar | Redirection to Register page | Pass | |
+| **Homepage** | | | | |
+| Logo | Click on Logo | Redirection to Homepage | Pass | |
+| Navbar / Sidebar | Click on Home link in navbar | Redirection to Homepage | Pass | |
+| | Click on Acccount link in navbar **(user not signed in)** | Opens dropdown account links - Signin / Register | Pass | Only Signin / Register options are available when user is not signed in |
+| | Click on Acccount link in navbar **(non-admin user signed in)** | Opens dropdown account links - Profile / Add Cafe / Signout links are available when a non-admin user is signed in | Pass | Profile / Add Cafe / Signout options are available to signed in non-admin users |
+| | Click on Acccount link in navbar **(admin user signed in)** | Opens dropdown account links - Profile / Add Cafe / Manage Locations / Signout links are available when an admin user is signed in | Pass | Extra link available to admin users only - Manage Locations |
+| | Click on Profile link in sidebar | Redirection to signed in user's Profile page | Pass | Correct session user's profile is displayed |
+| | Click on Profile link in dropdown of navbar | Redirection to signed in user's Profile page | Pass | Correct session user's profile is displayed |
+| | Click on Register link in dropdown of navbar | Redirection to Register page | Pass | |
 | | Click on Register link in sidebar | Redirection to Register page | Pass | |
-| | Click on Gifts link in navbar | Redirection to Gifts page | Pass | |
-| | Click on Gifts link in sidebar | Redirection to Gifts page | Pass | |
-| | Click on Add Gift link in navbar | Redirection to Add Gift page | Pass | |
-| | Click on Add Gift link in sidebar | Redirection to Add Gift page | Pass | |
-| | Click on Register button | Redirection to Register page | Pass | |
+| | Click on Signin link in dropdown of navbar | Redirection to Signin page | Pass | |
+| | Click on Signin link in sidebar | Redirection to Signin page | Pass | |
+| | Click on Manage Locations link in dropdown of navbar | Redirection to Manage Locations page | Pass | |
+| | Click on Manage Locations link in dropdown of navbar | Redirection to Manage Locations page | Pass | |
+| Add Cafe button | Click on 'ADD CAFE' button (user not signed in) | Redirection to Signin page | Pass | |
+|  | Click on 'ADD CAFE' button (any user signed in) | Redirection to Add Cafe page | Pass | |
+| Search bar | Click on the search bar and type in a search term | Placeholder 'Search' text moves above the input field, and the search term becomes visible | Pass | |
+| Search button | Once a search term is typed, click on the SEARCH button (either the recognisable magnifying glass on small devices, or the button labelled 'SEARCH' with search icon on larger devices) | The page refreshes and a list of cafe search results is displayed below the search bar (if the search returns results) or a message is displayed: "No result found" | Pass | Cafe results will only be 'found' if the search term relates to either the Cafe name / Country name / City name of saved Cafe posts. Users cannot filter results by published 'usernames' for example. |
+| Reset button | Click on the RESET button (either a backwards arrow icon with or without the RESET text shown). | This will refresh the homepage, so any words typed in the search bar or searches performed will be erased. | Pass | |
+| Open a published Cafe Card | Click on the Country image / Cafe name / chevron icon to expand the cafe card and reveal more information | All cafe details (matching the Add Cafe form inputs) will be visisble as the card expands | Pass | The 'published by' username and 'published on' date is also visible on the expanded cafe card|
+| Close a published Cafe Card | Click on the Country image / Cafe name / chevron icon to close the expanded view | The cafe card returns to the original format of Country image / Cafe name / City name as visible to the user | Pass | Applicable to **All Pages** |
+| Footer Social Links | Click the LinkedIn / Github icons | Profile pages for Tarah Waters' LinkedIn / Github will open in a new tab | Pass | Applicable to **All Pages** |
+| **Register Page** | | | | |
 | | Enter username on register form | Field will accept freeform text | Pass | |
 | | Enter valid password | Field will only accept password format | Pass | Registration successful flash massage shown for successful new profile |
 | Log In | | | | |
