@@ -116,6 +116,9 @@ def signin():
                             request.form.get("username")))
                         return redirect(url_for(
                             "profile", username=session["user"]))
+                    else:
+                        flash("Welcome, {}".format(
+                                request.form.get("username")))
 
                 else:
                     # passwords do not match
