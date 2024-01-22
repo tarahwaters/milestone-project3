@@ -140,8 +140,8 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on the Signin link | Redirection to Signin page | Pass | |
 | | Enter username on signin page | Field will accept usernames of the required format/length (as described for **Register Page**) | Pass | "Username criteria met" helper text will display in green if username meets validation criteria, otherwise the red helper text will guide the user (like on the Register page) |
 | | Enter valid password on signin page | Field will only accept password of with a certain format/length | Pass | Redirection to user's Profile page with a Welcome, [username] message if successfully signed in, otherwise flash error message of "Sorry! Incorrect Username and/or Password" |
-| Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Flash message will confirm log out |
+| **Sign Out** | | | | |
+| | Click Signout button | Flash message will display confirmation of a successful signout, while redirecting to the homepage | Pass | |
 | Profile | | | | |
 | | Click on Profile button | User will be redirected to the Profile page | Pass | |
 | Add Gift | | | | |
